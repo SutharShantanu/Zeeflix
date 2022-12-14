@@ -1,0 +1,354 @@
+
+
+[
+    {
+        "title": "Las Vegas",
+        "image": "https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5259649/portrait/1920x770c85c702415cb46fdbc2b704334a1222d.jpg",
+        "category": "latest",
+        "rating": 3020,
+        "id": "1"
+    },
+    {
+        "title": "Wheaton",
+        "image": "https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-6-4z5266140/portrait/1920x770b5b8c75bd41444c48b521f92781e122a.jpg",
+        "category": "latest",
+        "rating": 37903,
+        "id": "2"
+    },
+    {
+        "title": "Perth Amboy",
+        "image": "https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5266343/portrait/1920x770adfe1ea302d644f69d29804dae8b13b1.jpg",
+        "category": "latest",
+        "rating": 8668,
+        "id": "3"
+    },
+    {
+        "title": "Redwood City",
+        "image": "https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5266008/portrait/1920x770384065d52c8245ef840f9956e2b7aade.jpg",
+        "category": "latest",
+        "rating": 33372,
+        "id": "4"
+    },
+    {
+        "title": "San Rafael",
+        "image": "https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5261867/portrait/1920x770175cf3284e644bd48472ec218aaaddda.jpg",
+        "category": "latest",
+        "rating": 53692,
+        "id": "5"
+    },
+    {
+        "title": "Boulder",
+        "image": "https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-6-4z5199975/portrait/1920x77079afb06df35c44f085cd8482df287a17.jpg",
+        "category": "latest",
+        "rating": 40539,
+        "id": "6"
+    },
+    {
+        "title": "Carlsbad",
+        "image": "https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-6-4z5230436/portrait/1920x770ac642b6d516f4a958c44cb56912a306cb137ff41ad1c409e86f0a9b4f733a023.jpg",
+        "category": "latest",
+        "rating": 41736,
+        "id": "7"
+    },
+    {
+        "title": "Coral Gables",
+        "image": "https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5262281/portrait/1920x770351c3aee7e8647d992183f33893962d1.jpg",
+        "category": "latest",
+        "rating": 45402,
+        "id": "8"
+    },
+    {
+        "title": "New Braunfels",
+        "image": "https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5254708/portrait/1920x77088754fa6d1384d259444f7d1d4b00a33.jpg",
+        "category": "latest",
+        "rating": 291,
+        "id": "9"
+    },
+    {
+        "title": "Tulare",
+        "image": "https://akamaividz2.zee5.com/image/upload/w_195,h_293,c_scale,f_webp,q_auto:eco/resources/0-0-1z5264082/portrait/1920x770f87ba849a23e4f7bad2592b25210af6e98727c27718247529c77ede0141ce284.jpg",
+        "category": "latest",
+        "rating": 74645,
+        "id": "10"
+    },
+    {
+        "title": "Joplin",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/650.jpg",
+        "category": "varchar",
+        "rating": 70945,
+        "id": "11"
+    },
+    {
+        "title": "Irvine",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/275.jpg",
+        "category": "varchar",
+        "rating": 49056,
+        "id": "12"
+    },
+    {
+        "title": "Walnut Creek",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1176.jpg",
+        "category": "tinyint",
+        "rating": 26752,
+        "id": "13"
+    },
+    {
+        "title": "Wyoming",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/245.jpg",
+        "category": "binary",
+        "rating": 65433,
+        "id": "14"
+    },
+    {
+        "title": "Hendersonville",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/253.jpg",
+        "category": "tinyint",
+        "rating": 3925,
+        "id": "15"
+    },
+    {
+        "title": "Dundalk",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/978.jpg",
+        "category": "enum",
+        "rating": 70291,
+        "id": "16"
+    },
+    {
+        "title": "South Whittier",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/129.jpg",
+        "category": "tinyint",
+        "rating": 4288,
+        "id": "17"
+    },
+    {
+        "title": "Yuma",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1242.jpg",
+        "category": "text",
+        "rating": 70247,
+        "id": "18"
+    },
+    {
+        "title": "Blue Springs",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/473.jpg",
+        "category": "serial",
+        "rating": 50255,
+        "id": "19"
+    },
+    {
+        "title": "Rowlett",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/752.jpg",
+        "category": "set",
+        "rating": 70972,
+        "id": "20"
+    },
+    {
+        "title": "Union City",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/290.jpg",
+        "category": "boolean",
+        "rating": 7853,
+        "id": "21"
+    },
+    {
+        "title": "Palmdale",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/950.jpg",
+        "category": "real",
+        "rating": 48031,
+        "id": "22"
+    },
+    {
+        "title": "McKinney",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1191.jpg",
+        "category": "float",
+        "rating": 33285,
+        "id": "23"
+    },
+    {
+        "title": "Winston-Salem",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/350.jpg",
+        "category": "double",
+        "rating": 43166,
+        "id": "24"
+    },
+    {
+        "title": "Newark",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1168.jpg",
+        "category": "set",
+        "rating": 1780,
+        "id": "25"
+    },
+    {
+        "title": "Wyoming",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/675.jpg",
+        "category": "tinyint",
+        "rating": 13414,
+        "id": "26"
+    },
+    {
+        "title": "Olympia",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/925.jpg",
+        "category": "tinyint",
+        "rating": 97619,
+        "id": "27"
+    },
+    {
+        "title": "Antelope",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/721.jpg",
+        "category": "float",
+        "rating": 14355,
+        "id": "28"
+    },
+    {
+        "title": "Normal",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/776.jpg",
+        "category": "double",
+        "rating": 11970,
+        "id": "29"
+    },
+    {
+        "title": "Barnstable Town",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/901.jpg",
+        "category": "bit",
+        "rating": 58976,
+        "id": "30"
+    },
+    {
+        "title": "West Jordan",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/774.jpg",
+        "category": "double",
+        "rating": 28715,
+        "id": "31"
+    },
+    {
+        "title": "Bristol",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1213.jpg",
+        "category": "mediumint",
+        "rating": 32952,
+        "id": "32"
+    },
+    {
+        "title": "Mount Pleasant",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/380.jpg",
+        "category": "date",
+        "rating": 10547,
+        "id": "33"
+    },
+    {
+        "title": "DeKalb",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/391.jpg",
+        "category": "smallint",
+        "rating": 63785,
+        "id": "34"
+    },
+    {
+        "title": "Oshkosh",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1056.jpg",
+        "category": "datetime",
+        "rating": 68470,
+        "id": "35"
+    },
+    {
+        "title": "East Honolulu",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1105.jpg",
+        "category": "real",
+        "rating": 73536,
+        "id": "36"
+    },
+    {
+        "title": "Dallas",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/244.jpg",
+        "category": "int",
+        "rating": 29611,
+        "id": "37"
+    },
+    {
+        "title": "Barnstable Town",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1083.jpg",
+        "category": "geometry",
+        "rating": 82712,
+        "id": "38"
+    },
+    {
+        "title": "Dallas",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/535.jpg",
+        "category": "set",
+        "rating": 33740,
+        "id": "39"
+    },
+    {
+        "title": "Apex",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/559.jpg",
+        "category": "geometry",
+        "rating": 45769,
+        "id": "40"
+    },
+    {
+        "title": "North Charleston",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1050.jpg",
+        "category": "boolean",
+        "rating": 77263,
+        "id": "41"
+    },
+    {
+        "title": "Beavercreek",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/604.jpg",
+        "category": "real",
+        "rating": 28392,
+        "id": "42"
+    },
+    {
+        "title": "Bridgeport",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/181.jpg",
+        "category": "bigint",
+        "rating": 76553,
+        "id": "43"
+    },
+    {
+        "title": "Cutler Bay",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/494.jpg",
+        "category": "bit",
+        "rating": 81790,
+        "id": "44"
+    },
+    {
+        "title": "Troy",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1126.jpg",
+        "category": "float",
+        "rating": 86496,
+        "id": "45"
+    },
+    {
+        "title": "Richmond",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/213.jpg",
+        "category": "real",
+        "rating": 43584,
+        "id": "46"
+    },
+    {
+        "title": "Champaign",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/690.jpg",
+        "category": "varchar",
+        "rating": 33265,
+        "id": "47"
+    },
+    {
+        "title": "Bloomington",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/950.jpg",
+        "category": "text",
+        "rating": 81375,
+        "id": "48"
+    },
+    {
+        "title": "Kingsport",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/431.jpg",
+        "category": "int",
+        "rating": 93635,
+        "id": "49"
+    },
+    {
+        "title": "Georgetown",
+        "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/940.jpg",
+        "category": "enum",
+        "rating": 63390,
+        "id": "50"
+    }
+]
