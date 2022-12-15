@@ -1,0 +1,202 @@
+* {
+	font-family: NotoSansMedium, sans-serif;
+	color: white;
+	/* background-color: black; */
+}
+
+body {
+	border: 1px solid red;
+	background-color: black;
+	margin: 0px;
+}
+header {
+	/* border: 1px solid blue; */
+	margin: 20px 25px 0px 38px;
+	/* background-color: black; */
+}
+nav {
+	display: flex;
+}
+nav > img {
+	width: 69px;
+}
+.nav_main {
+	/* border: 1px solid blue; */
+	display: flex;
+	justify-content: space-between;
+	width: 93%;
+	margin: 0px 20px;
+}
+#nav_link {
+	/* border: 1px solid purple; */
+	height: 32%;
+	margin-top: 2px;
+	padding: 20px 0px;
+}
+#nav_link > a {
+	/* border: 1px solid black; */
+	margin: 0px 15px;
+	text-decoration: none;
+	/* color: white; */
+	font-family: NotoSansRegular, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+		"Helvetica Neue";
+	font-weight: 400;
+	line-height: 10px;
+	transition: all .5s;
+}
+#nav_link>a:hover{
+	border-bottom: 1px solid white;
+}
+#nav_part {
+	/* border: 1px solid green; */
+	height: 76%;
+	margin-top: 2px;
+	display: flex;
+	padding: 5px;
+}
+#sear {
+	/* border: 1px solid yellowgreen; */
+	display: flex;
+}
+#sear > form {
+	display: flex;
+}
+#nav_search {
+	/* border: 1px solid grey; */
+	width: 300px;
+	border-radius: 6px;
+	margin: 10px;
+	padding: 10px;
+	height: 34px;
+	background-color: black;
+	color: white;
+}
+#nav_search:focus {
+	outline: none;
+}
+form > div {
+	/* border: 1px solid red; */
+	/* background-color: white; */
+	padding: 0%;
+	height: 30px;
+	margin-top: 11px;
+	/* display: flex; */
+	/* border: none; */
+}
+#search_ico {
+	width: 28px;
+}
+#search_ico:hover {
+	cursor: pointer;
+}
+#rest {
+	/* border: 1px solid peru; */
+	display: flex;
+	padding: 0px 10px;
+	justify-content: space-between;
+	width: 400px;
+}
+#lang {
+	margin-top: 6px;
+	height: 34px;
+	transition: all 0.5s;
+}
+#lang:hover{
+cursor: pointer;
+}
+#log_in {
+	border: 1px solid white;
+	text-transform: uppercase;
+	background-color: black;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 0px 20px;
+	border-radius: 6px;
+	height: 85%;
+	margin-top: 5px;
+	transition: all 0.5s;
+}
+#log_in:hover {
+	cursor: pointer;
+	background-color: white;
+	color: black;
+}
+#buy_plan {
+	border: 1px solid white;
+	text-transform: uppercase;
+	background-color: #8230c6;
+	padding: 0px 20px;
+	display: flex;
+	font-size: 12px;
+	font-weight: 700;
+	border-radius: 6px;
+	height: 80%;
+	margin-top: 5px;
+	transition: all 0.5s;
+}
+#buy_plan:hover {
+	cursor: pointer;
+	background-color: #5c1695;
+}
+#buy_plan > img {
+	/* border: 1px solid red; */
+	margin-top: 10px;
+	height: 20px;
+	/* width: 20px; */
+	/* margin-top: 20px; */
+}
+#buy_plan > p {
+	margin-top: 17%;
+	margin-left: 6px;
+}
+#ham {
+	margin-top: 13px;
+	height: 24px;
+}
+#ham:hover {
+	cursor: pointer;
+}
+
+/* footer style starts here */
+
+footer {
+	border: 1px solid green;
+}
+
+.foot {
+	margin: auto;
+	width: 86%;
+}
+.top {
+	border: 1px solid purple;
+	display: flex;
+	padding: 20px 0px;
+	justify-content: space-between;
+	/* background-color: black; */
+}
+.store {
+	border: 1px solid yellowgreen;
+	display: flex;
+	width: 400px;
+	padding: 20px 0px;
+	justify-content: space-between;
+}
+.store > h4 {
+	margin: 10px 0px 0px 0px;
+}
+.connect {
+	border: 1px solid red;
+	display: flex;
+	width: 400px;
+	padding: 20px 0px;
+	justify-content: space-between;
+}
+.connect > h4 {
+	margin: 10px 0px 0px 0px;
+}
+
+.connect > a > img {
+	width: 30px;
+	border-radius: 50%;
+}
