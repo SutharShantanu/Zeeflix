@@ -7,9 +7,14 @@
             content="IE=edge">
         <meta name="viewport"
             content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <link rel="icon"
+            type="image/x-icon"
+            href="/Image/Logo_White_Round.ico">
+        <title>ZEEflix</title>
         <link rel="stylesheet"
             href="Style/style.css">
+
+
     </head>
 
     <body>
@@ -23,6 +28,16 @@
                         <a href="">TV Shows</a>
                         <a href="">Movies</a>
                         <a href="">Web Series</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">Dropdown</button>
+                            <div class="dropdown-content">
+                                <a href="#">Live TV</a>
+                                <a href="#">Music</a>
+                                <a href="#">Cricket</a>
+                                <a href="#">Kids</a>
+                                <a href="#">Premium Shows</a>
+                            </div>
+                        </div>
                     </div>
                     <div id="nav_part">
                         <div id="sear">
@@ -32,13 +47,15 @@
                                     id="nav_search">
                                 <div><img id="search_ico"
                                         src="/Image/search_ico.png"
-                                        alt="search"></div>
+                                        alt="search"
+                                        title="Search Now"></div>
                             </form>
                         </div>
                         <div id="rest">
                             <img id="lang"
                                 src="/Image/translate.png"
-                                alt="language" title="Change Language">
+                                alt="language"
+                                title="Change Language">
                             <button id="log_in">login</button>
                             <div id="buy_plan"> <img src="/Image/crown.png"
                                     alt="crown">
@@ -53,47 +70,272 @@
             </nav>
         </header>
 
+        <!-- Slider Part written here -->
+
+        <div id="slider">
+            <a id="prev"
+                onclick="plusSlides(-1)">&#10094;</a>
+            <img id="image"
+                src="imagees/img1.jpg"
+                alt="">
+            <a id="next"
+                onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
         <!-- Main Part goes here -->
-        <footer>
-            <hr>
-            <div class="foot">
-                <div class="top">
-                    <div class="store">
-                        <h4>Download Apps</h4>
-                        <a href="https://play.google.com/store/apps/details?id=com.graymatrix.did"
-                            target="_blank"><img src="https://www.zee5.com/images/play_store.png?ver=2.52.65"
-                                alt=""></a>
-                        <a href="https://apps.apple.com/in/app/zee5-shows-live-tv-movies/id743691886"
-                            target="_blank"><img src="https://www.zee5.com/images/app_store.png?ver=2.52.65"
-                                alt=""></a>
-                    </div>
-                    <div class="connect">
-                        <h4>Connect with us</h4>
-                        <a href="https://www.facebook.com/ZEE5/"
-                            target="_blank"><img src="/Image/facebook.png"
-                                alt=""></a>
-                        <a href="https://www.instagram.com/zee5/"
-                            target="_blank"><img src="/Image/instagram.png"
-                                alt=""></a>
-                        <a href="https://twitter.com/zee5india"
-                            target="_blank"><img src="/Image/twitter.png"
-                                alt=""></a>
-                        <a href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ"
-                            target="_blank"><img src="/Image/youtube.png"
-                                alt=""></a>
-                    </div>
+
+
+        <!---zee5 footer code-->
+
+        <div class="i_frame">
+            <hr width="95%"
+                size="1"
+                color="#a785ff">
+            <h2> Movies Trailer</h2>
+            <div id="i_one">
+                <div>
+                    <iframe width="450"
+                        height="315"
+                        src="https://www.youtube.com/embed/KNjBhoxNpvw"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
-                <div class="mid">
-                    <a href=""
-                        class="btm"></a>
-                    <a href=""
-                        class="btm"></a>
-                    <a href=""
-                        class="btm"></a>
-                    <a href=""></a>
+                <div>
+                    <iframe width="450"
+                        height="315"
+                        src="https://www.youtube.com/embed/v042lAZ0QJw"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div>
+                    <iframe width="450"
+                        height="315"
+                        src="https://www.youtube.com/embed/Eue5kh-NODE"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="i_two">
+                <div>
+                    <iframe width="450"
+                        height="315"
+                        src="https://www.youtube.com/embed/uvSkdTmRMx8"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div>
+                    <iframe width="450"
+                        height="315"
+                        src="https://www.youtube.com/embed/13Jbnat1Pg0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div>
+                    <iframe width="450"
+                        height="315"
+                        src="https://www.youtube.com/embed/-yifxBMgIeI"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+
+        <!--style="height:px;border-width:1;color:gray;background-color:rgb(32, 28, 28);margin-top: 15px;"> -->
+
+
+        <hr width="95%"
+            size="1"
+            color="#a785ff">
+        <footer id="footer">
+
+            <div class="container">
+
+                <br>
+                <!-- <div class="logDiv">
+
+                    <div class="logo">
+
+                        <h4>Download Apps</h4>
+                        <a href="https://play.google.com/store/apps/details?id=com.graymatrix.did"><img
+                                src="https://www.zee5.com/images/play_store.png?ver=2.50.94"></a>
+                        <a href="https://apps.apple.com/in/app/zee5-shows-live-tv-movies/id743691886"><img
+                                src="https://www.zee5.com/images/app_store.png?ver=2.50.94"></a>
+                    </div>
+                    <div class="leftlogo">
+                        <h4>Connect with us</h4>
+
+                        <a href="https://www.facebook.com/ZEE5/"
+                            class="fb"><i class="fa-brands fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/zee5/"
+                            class="insta"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/zee5india"
+                            class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ"
+                            class="youtube"><i class="fa-brands fa-youtube"></i></a>
+
+                    </div>
+                </div> -->
+
+                <div class="foot">
+                    <div class="top">
+                        <div class="store">
+                            <h4>Download Apps</h4>
+                            <a href="https://play.google.com/store/apps/details?id=com.graymatrix.did"
+                                target="_blank"><img src="https://www.zee5.com/images/play_store.png?ver=2.52.65"
+                                    alt=""></a>
+                            <a href="https://apps.apple.com/in/app/zee5-shows-live-tv-movies/id743691886"
+                                target="_blank"><img src="https://www.zee5.com/images/app_store.png?ver=2.52.65"
+                                    alt=""></a>
+                        </div>
+                        <div class="connect">
+                            <h4>Connect with us</h4>
+                            <a href="https://www.facebook.com/ZEE5/"
+                                target="_blank"><img src="/Image/facebook.png"
+                                    alt=""></a>
+                            <a href="https://www.instagram.com/zee5/"
+                                target="_blank"><img src="/Image/instagram.png"
+                                    alt=""></a>
+                            <a href="https://twitter.com/zee5india"
+                                target="_blank"><img src="/Image/twitter.png"
+                                    alt=""></a>
+                            <a href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ"
+                                target="_blank"><img src="/Image/youtube.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="about">
+                        <!-- about -->
+                        <p><a href="https://www.zee5.com/aboutus">About Us</a></p>
+
+                        <p>|</p>
+                        <!-- help center -->
+                        <p><a href="https://helpcenter.zee5.com/portal/en/home">Help Center</a></p>
+
+                        <p>|</p>
+                        <!-- Privacy policy -->
+                        <p><a href="https://www.zee5.com/privacypolicy">Privacy Policy</a></p>
+                        <p>|</p>
+                        <!-- Privacy policy -->
+                        <p><a href="https://www.zee5.com/termsofuse">Terms of Use</a></p>
+
+
+
+
+                    </div>
+                    <div class="row">
+                        <div class="footer-col">
+                            <h3>Popular TV Shows</h3>
+
+
+                            <div><a
+                                    href="https://www.zee5.com/movies/details/kya-meri-sonam-gupta-bewafa-hai/0-0-1z51625">Kumkum
+                                    Bhagya</a></div>
+                            <div><a href="">Kundali Bhagya</a></div>
+                            <div><a href="">Bhagya Lakshmi</a></div>
+                            <div><a href="">Tujhse Hai Raabta</a></div>
+                            <div><a href="">Kyun Rishton Mein Katti Batti</a></div>
+
+
+
+                        </div>
+                        <div class="footer-col">
+                            <h3>Premium Movies</h3>
+
+                            <div><a href="">Kya Meri Sonam Gupta Bewafa</a></div>
+                            <div><a href="">Helmet</a></div>
+                            <div><a href="">200 Halla Ho</a></div>
+                            <div><a href="">14 Phere</a></div>
+                            <div><a href="">Dial 100</a></div>
+
+                        </div>
+
+                        <div class="footer-col">
+                            <h3>Popular LIVE TV Channels</h3>
+
+                            <div><a href="">Aaj Tak</a></div>
+                            <div><a href="">Zee News</a></div>
+                            <div><a href="">Zee Tv HD</a></div>
+                            <div><a href="">&TV HD</a></div>
+                            <div><a href="">Zee Marathi HD</a></div>
+
+                        </div>
+                        <div class="footer-col">
+                            <h3>Popular Web Series</h3>
+
+                            <div><a href="">Sunflower</a></div>
+                            <div><a href="">Jeet Ki Zid</a></div>
+                            <div><a href="">Biccho Ka Khel</a></div>
+                            <div><a href="">State of Seige:26/11</a></div>
+                            <div><a href="">Naxalbari</a></div>
+
+                        </div>
+                        <div class="footer-col">
+                            <h3>Bollywood Top Celebrities</h3>
+
+                            <div><a href="">Sunny Leone</a></div>
+                            <div><a href="">Disha Patani</a></div>
+                            <div><a href="">Deepika Padukone</a></div>
+                            <div><a href="">Salman Khan</a></div>
+                            <div><a href="">Nora Fatehi</a></div>
+
+                        </div>
+                    </div>
+                    <div class="end">Best viewed on Google Chrome 80+, Microsoft Edge 81+, Mozilla Firefox 75+,
+                        Safari
+                        5.1.5+
+                        Copyright © 2022 Zee Entertainment Enterprises Ltd. All rights reserved.</div>
                 </div>
             </div>
         </footer>
+
+
     </body>
 
 </html>
+
+<script>
+    let prev = document.getElementById("prev");
+    let next = document.getElementById("next");
+    
+    let arr = ["slide_img/img1.webp", "slide_img/img2.webp", "slide_img/img3.webp", "slide_img/img4.webp", "slide_img/img5.webp", "slide_img/img6.webp"]
+    let i = 0;
+    next.addEventListener("click", function () {
+        i++;
+        if (i > arr.length - 1) {
+            i = 0;
+        }
+        document.getElementById("image").src = arr[i];
+    })
+    prev.addEventListener("click", function () {
+        i--;
+        if (i < 0) {
+            i = arr.length - 1;
+        }
+        document.getElementById("image").src = arr[i];
+    })
+    function slides () {
+
+        document.getElementById("image").src = arr[i];
+        if (i < arr.length - 1) {
+            i++;
+        }
+        else {
+            i = 0;
+        }
+    }
+    setInterval(slides, 3000);
+</script>
