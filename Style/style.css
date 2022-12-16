@@ -1,6 +1,6 @@
 * {
 	font-family: NotoSansMedium, sans-serif;
-	color: white;
+	/* color: white; */
 	/* background-color: black; */
 }
 
@@ -11,7 +11,7 @@ body {
 }
 header {
 	/* border: 1px solid blue; */
-	border-bottom: 1px solid #a785ff;
+	border-bottom: 3px solid #a785ff;
 	/* margin: 0px 25px 0px 38px; */
 	/* background-color: black; */
 }
@@ -39,7 +39,7 @@ nav > img {
 	/* border: 1px solid black; */
 	margin: 0px 15px;
 	text-decoration: none;
-	/* color: white; */
+	color: white;
 	font-family: NotoSansRegular, -apple-system, BlinkMacSystemFont, "Segoe UI",
 		Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
 		"Helvetica Neue";
@@ -93,7 +93,7 @@ nav > img {
 }
 
 #nav_link > a:hover {
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid #a785ff;
 }
 #nav_part {
 	/* border: 1px solid green; */
@@ -148,8 +148,8 @@ form > div {
 	width: 400px;
 }
 #lang {
-	margin-top: 6px;
-	height: 34px;
+	margin-top: 7px;
+	height: 40px;
 	transition: all 0.5s;
 }
 #lang:hover {
@@ -159,6 +159,7 @@ form > div {
 	border: 1px solid white;
 	text-transform: uppercase;
 	background-color: #0f0617;
+	color: white;
 	font-size: 12px;
 	font-weight: 700;
 	padding: 0px 20px;
@@ -176,6 +177,7 @@ form > div {
 	border: 1px solid white;
 	text-transform: uppercase;
 	background-color: #8230c6;
+	color: white;
 	padding: 0px 20px;
 	display: flex;
 	font-size: 12px;
@@ -220,8 +222,8 @@ form > div {
 }
 #slider {
 	border: 0px solid red;
-	width: 90%;
-	margin: auto;
+	width: 93%;
+	margin: 20px auto;
 	position: relative;
 	/* margin-top: 25px; */
 }
@@ -257,15 +259,86 @@ form > div {
 	background-color: rgba(255, 255, 255, 0.168);
 }
 
+/* Main data goes here */
+
+
+.main_part {
+	margin: 20px auto;
+}
+.main_part>h2{
+	color: white;
+	margin: 20px 57px;
+}
+.trending {
+	/* border: 1px solid red; */
+	width: 95%;
+	margin: auto;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+}
+.trending > div {
+	border: 3px solid black;
+	margin: 0px 10px 30px 10px;
+	padding: 8px;
+	color: white;
+	border-radius: 6px;
+	transition: all 0.5s;
+
+}
+.trending > div:hover {
+	transform: scale(1.1);
+	border: 3px solid white;
+	border-radius: 6px;
+	/* height: 450px; */
+	padding: 8px;
+	background-color: white;
+	color: #0f0617;
+
+}
+.trending > div > h4 {
+	margin-bottom: 0px;
+}
+.trending > div > p {
+	font-size: 12px;
+	margin-bottom: 0px;
+	font-weight: bolder;
+}
+.trending > div > img {
+	border-radius: 6px 6px 6px 6px;
+	/* width: 400px; */
+}
+
+
+
+p~button {
+	border: 1px solid #a785ff;
+	border-radius: 6px;
+	width: 231px;
+	padding: 8px;
+	margin-top: 10px;
+	background-color: #0f0617;
+	color: white;
+}
+p~button:hover {
+	border: 1px solid #a785ff;
+	border-radius: 6px;
+	padding:6px 8px;
+	margin-top: 10px;
+	background-color: #a785ff;
+	color: black;
+}
+
 /* I_Frame Code Goes Here */
 
 .i_frame {
 	/* border: 1px solid rebeccapurple; */
-	/* width: 90%; */
-	margin: auto;
+	width: 90%;
+	margin: 20px auto;
 }
 .i_frame > h2 {
-	width: 95%;
+	/* width: 95%; */
+	color: white;
 	margin: 20px auto;
 }
 #i_one {
@@ -387,47 +460,6 @@ footer h3 {
 	font-weight: 20px;
 	color: white;
 }
-/* }
-.logDiv{
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: auto;
-    align-items: center;
-}
-
-.logo h4{
-    margin-right: 10px;
-}
-.logo a{
-    margin-right: 10px;
-}
-
-.logo{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.leftlogo{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.leftlogo a{
-    margin-left: 10px
-}
-a{
-    text-decoration:none;
-}
-.logo-On{
-    width:40px;
-    height:40px;
-} */
-
 .about {
 	text-align: left;
 	width: 34%;
