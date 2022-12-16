@@ -10,9 +10,11 @@
         <link rel="icon"
             type="image/x-icon"
             href="/Image/Logo_White_Round.ico">
-        <title>ZEEflix</title>
+        <title>ZEEflix - Watch TV Shows, 100+ Originals, Movies, News &amp; Live TV Online</title>
         <link rel="stylesheet"
             href="Style/style.css">
+
+        <!-- <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> -->
 
 
     </head>
@@ -29,7 +31,7 @@
                         <a href="">Movies</a>
                         <a href="">Web Series</a>
                         <div class="dropdown">
-                            <button class="dropbtn">Dropdown</button>
+                            <button class="dropbtn">More</button>
                             <div class="dropdown-content">
                                 <a href="#">Live TV</a>
                                 <a href="#">Music</a>
@@ -83,14 +85,22 @@
         </div>
 
         <!-- Main Part goes here -->
+        <div class="main_part">
+            <h2>Trending Near You</h2>
 
+            <div class="trending">
+                <!-- Append data here -->
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
 
         <!---zee5 footer code-->
 
         <div class="i_frame">
-            <hr width="95%"
-                size="1"
-                color="#a785ff">
+
             <h2> Movies Trailer</h2>
             <div id="i_one">
                 <div>
@@ -149,14 +159,16 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
+
             </div>
+
         </div>
 
 
         <!--style="height:px;border-width:1;color:gray;background-color:rgb(32, 28, 28);margin-top: 15px;"> -->
 
 
-        <hr width="95%"
+        <hr width="93%"
             size="1"
             color="#a785ff">
         <footer id="footer">
@@ -164,30 +176,6 @@
             <div class="container">
 
                 <br>
-                <!-- <div class="logDiv">
-
-                    <div class="logo">
-
-                        <h4>Download Apps</h4>
-                        <a href="https://play.google.com/store/apps/details?id=com.graymatrix.did"><img
-                                src="https://www.zee5.com/images/play_store.png?ver=2.50.94"></a>
-                        <a href="https://apps.apple.com/in/app/zee5-shows-live-tv-movies/id743691886"><img
-                                src="https://www.zee5.com/images/app_store.png?ver=2.50.94"></a>
-                    </div>
-                    <div class="leftlogo">
-                        <h4>Connect with us</h4>
-
-                        <a href="https://www.facebook.com/ZEE5/"
-                            class="fb"><i class="fa-brands fa-facebook-square"></i></a>
-                        <a href="https://www.instagram.com/zee5/"
-                            class="insta"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://twitter.com/zee5india"
-                            class="twitter"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ"
-                            class="youtube"><i class="fa-brands fa-youtube"></i></a>
-
-                    </div>
-                </div> -->
 
                 <div class="foot">
                     <div class="top">
@@ -307,35 +295,11 @@
 
 </html>
 
-<script>
-    let prev = document.getElementById("prev");
-    let next = document.getElementById("next");
-    
-    let arr = ["slide_img/img1.webp", "slide_img/img2.webp", "slide_img/img3.webp", "slide_img/img4.webp", "slide_img/img5.webp", "slide_img/img6.webp"]
-    let i = 0;
-    next.addEventListener("click", function () {
-        i++;
-        if (i > arr.length - 1) {
-            i = 0;
-        }
-        document.getElementById("image").src = arr[i];
-    })
-    prev.addEventListener("click", function () {
-        i--;
-        if (i < 0) {
-            i = arr.length - 1;
-        }
-        document.getElementById("image").src = arr[i];
-    })
-    function slides () {
+<script src="script.js"></script>
 
-        document.getElementById("image").src = arr[i];
-        if (i < arr.length - 1) {
-            i++;
-        }
-        else {
-            i = 0;
-        }
-    }
-    setInterval(slides, 3000);
-</script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+
+</script> -->
