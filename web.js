@@ -18,17 +18,27 @@ data.forEach(function(el){
   let div=document.createElement("div")
   let img=document.createElement("img")
   img.setAttribute("src",el.img)
+
   img.addEventListener("click",()=>{
     window.location.href="./Web2.html"
   })
   let btn =document.createElement("button")
   btn.innerText="Play"
   
+
+
   
 
 
 
+
   div.append(img,btn)
+
+
+
+
+  div.append(img)
+
   document.querySelector("#container_1").append(div)
   
 })
@@ -53,12 +63,20 @@ data.forEach(function(el){
   let div=document.createElement("div")
   let img=document.createElement("img")
   img.setAttribute("src",el.img)
+
   let btn =document.createElement("button")
   btn.innerText="Play"
 
 
 
   div.append(img,btn)
+
+
+
+
+
+  div.append(img)
+
   document.querySelector("#container_2").append(div)
   
 })
@@ -82,13 +100,19 @@ data.forEach(function(el){
   let div=document.createElement("div")
   let img=document.createElement("img")
   img.setAttribute("src",el.img)
+
   let btn =document.createElement("button")
   btn.innerText="Play"
 
 
 
 
+
+
   div.append(img,btn)
+
+  div.append(img)
+
   document.querySelector("#container_3").append(div)
   
 })
@@ -111,12 +135,20 @@ data.forEach(function(el){
   let div=document.createElement("div")
   let img=document.createElement("img")
   img.setAttribute("src",el.img)
+
   let btn =document.createElement("button")
   btn.innerText="Play"
 
 
 
   div.append(img,btn)
+
+
+
+
+
+  div.append(img)
+
   document.querySelector("#container_4").append(div)
   
 })
@@ -139,6 +171,7 @@ data.forEach(function(el){
   let div=document.createElement("div")
   let img=document.createElement("img")
   img.setAttribute("src",el.img)
+
   let btn =document.createElement("button")
   btn.innerText="Play"
  
@@ -146,10 +179,20 @@ data.forEach(function(el){
 
 
   div.append(img,btn)
+
+
+
+
+
+  div.append(img)
+
   document.querySelector("#container_5").append(div)
   
 })
 }
+
+
+
 
 
 
@@ -173,7 +216,6 @@ data.forEach(function(el){
   img.setAttribute("src",el.img)
   let title = document.createElement("h3")
   title.innerText=el.title
-  
 
 
 
@@ -352,8 +394,6 @@ data.forEach(function(el){
 //     },2000)
 
 
-  //  ***********************************************
-
 // const slides =document.querySelectorAll(".slide")
 // var count=0;
 // slides.forEach(
@@ -383,7 +423,7 @@ data.forEach(function(el){
 
 const swiper = new Swiper('.swiper', {
   
-  direction: 'horizontal',
+
   autoplay:{
     delay:2000,
    disableOnInteraction:false,
@@ -406,3 +446,36 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+
+
+
+
+
+
+
+let i=0;
+    var x 
+   let data =["https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-4z5199975/cover/1920x77079afb06df35c44f085cd8482df287a17.jpg",
+   "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-4z5173774/cover/1920x7706e8d8d70922c434c94dd09c14ccc5d5b.jpg",
+   "https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-4z5230436/cover/1920x770ac642b6d516f4a958c44cb56912a306cb137ff41ad1c409e86f0a9b4f733a023.jpg",
+"https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-2176/cover/1920x770566e9b9990cd4b44a9c7a06ddd7a338d.jpg",
+"https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-4z5193948/cover/1920x7704ba850de7a8a410cb16fa2d7468d3e77.jpg",
+"https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-2370/cover/1920x770a94a27dafbe843889985e57f05578452d666a1c619ef4410b182686d33f158b5.jpg"]
+  function displayData(data){
+    document.getElementById("container").innerHTML="" 
+    console.log(data[i])
+    let img= document.createElement("img") 
+    img.src=data[i] 
+    document.getElementById("container").append(img)
+  }
+  displayData(data)
+  x=setInterval(()=>{
+        i++
+        if(i>=6){
+            i=0;
+        }
+        displayData(data)
+    },2000)
+   
+
