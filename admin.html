@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border-radius: 1rem;
+            width:25%;
+            height:400px;
+            margin-top: 50px;
+            margin-left: 20px;
+            background-color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        input{
+            margin-bottom: 30px;
+            padding: 10px 40px;
+            margin-left: 35px;
+            border: none;
+            border: 1px solid gray;
+        }
+        h1{
+        
+            margin-left: 35px;
+          
+            color: rgb(11, 92, 61);
+        }
+        .button{
+            border: none;
+            padding: 10px 100px;
+            margin-left: 35px;
+            border: 1px solid gray;
+        }
+        .button:hover{
+            background-color: rgb(32, 205, 32);
+            cursor: pointer;
+        }
+        body{
+            background-color: rgb(92, 6, 46);
+        }
+
+        #main{
+            width:70%;
+            height:auto;
+         margin-left: 25px;
+         margin-top: 30px;
+            border:1px solid white;
+           padding-left: 45px;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+          
+           
+
+        }
+        #top{
+            display: flex;
+        }
+#main>div{
+ 
+    width: 70%;
+}
+        #main>div>img{
+            width:100%;
+            height:200px;
+            border: 1px solid white;
+        }
+        button{
+            background-color: red;
+            color:white;
+            border:none;
+            padding: 3px 20px;
+            margin-left: 30px;
+            border-radius: 0.4rem;
+            margin-bottom: 20px;
+        }
+        .h1{
+            text-align: center;
+            background-color: rgb(254, 225, 255);
+          
+        }
+        #main_bar>button{
+            background-color: orange;
+            color:white;
+            border:none;
+            padding: 20px 40px;
+            margin-left: 30px;
+            border-radius: 0.4rem;
+            margin-bottom: 20px;
+        }
+
+        #main_bar>button:hover{
+            cursor: pointer;
+            background-color: green;
+        }
+        .foot {
+	margin: auto;
+	/* width: 86%; */
+}
+
+    </style>
+</head>
+<body>
+ 
+   <div id="top">
+    <form id="form" action="">
+        <h1>ADD DATA HERE</h1>
+        <input type="url" placeholder="Enter Url here"><br><input type="text"  placeholder="Enter Title here"><br><input type="number"  placeholder="Enter Rating here"><br><input type="text"  placeholder="Enter ID here"><br><input class="button"   type="submit">
+    </form>
+    <div id="main">
+
+    </div>
+   </div>
+   
+  
+</body>
+</html>
+<script>
+
+
+const submit_btn = document.querySelector("form");
+submit_btn.addEventListener("submit",RegisterFunction);
+
+// Make API request to server for registering the new user.
+async function RegisterFunction(event) {
+  try {
+    event.preventDefault();
+    let all_input_tags = document.querySelectorAll("#form input");
+    let userObj = {};
+    for (let i = 0; i < all_input_tags.length - 1; i++) {
+      userObj[all_input_tags[i].ima] = all_input_tags[i].value;
+    }
+    
+    let res = await fetch("https://63987501fe03352a94d1a25b.mockapi.io/home1", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(userObj)
+    });
+    if(res.ok){
+        alert("Movie Sucessfully added !!",);
+        display(data)
+       
+    }else{
+        alert("Something went wrong");
+    }
+  } catch (error) {
+    
+  }
+}
+
+       let bag=[];
+fetch("https://63987501fe03352a94d1a25b.mockapi.io/home1")
+.then((res)=>res.json())
+.then((data)=>{
+  bag=data
+  console.log(data)
+  display(data)
+})
+
+
+
+display(bag)
+function display(data){
+document.querySelector("#main").innerHTML="";
+data.forEach(function(el){
+  let div=document.createElement("div")
+  let img=document.createElement("img")
+  img.setAttribute("src",el.image)
+ let btn = document.createElement("button")
+ btn.innerText="Delete"
+ btn.setAttribute.data_id = el.id
+ btn.addEventListener("click",(event)=>{
+    let data_id = event.target.dataset.id;
+			console.log(data_id,typeof data_id);
+			// DeleteBtn(data_id);
+})
+ 
+  
+
+
+
+  div.append(img,btn)
+  document.querySelector("#main").append(div)
+  
+})
+}
+
+async function DeleteBtn(id){
+	try {
+		let delete_request = await fetch(`https://63987501fe03352a94d1a25b.mockapi.io/home1/${id}`,{
+            method : "DELETE",
+            headers : {
+                "Content-Type": "application/json",
+            },
+        });
+        if(delete_request.ok){
+			
+          display(data)
+        }
+	}
+	
+	catch (error) {
+		alert("You don't have access.")	
+	}
+}
+
+
+
+
+</script>
