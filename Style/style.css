@@ -159,15 +159,17 @@ form > div {
 	border: 1px solid white;
 	text-transform: uppercase;
 	background-color: #0f0617;
-	color: white;
 	font-size: 12px;
 	font-weight: 700;
-	padding: 0px 20px;
+	padding: 15px 20px 0px 20px;
 	border-radius: 6px;
-	height: 85%;
+	height: 51%;
 	margin-top: 5px;
 	transition: all 0.5s;
+	color: white;
+	text-decoration: none;
 }
+
 #log_in:hover {
 	cursor: pointer;
 	background-color: white;
@@ -261,11 +263,10 @@ form > div {
 
 /* Main data goes here */
 
-
 .main_part {
 	margin: 20px auto;
 }
-.main_part>h2{
+.main_part > h2 {
 	color: white;
 	margin: 20px 57px;
 }
@@ -274,7 +275,7 @@ form > div {
 	width: 95%;
 	margin: auto;
 	display: flex;
-	flex-wrap:wrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 .trending > div {
@@ -284,7 +285,6 @@ form > div {
 	color: white;
 	border-radius: 6px;
 	transition: all 0.5s;
-
 }
 .trending > div:hover {
 	transform: scale(1.1);
@@ -294,7 +294,6 @@ form > div {
 	padding: 8px;
 	background-color: white;
 	color: #0f0617;
-
 }
 .trending > div > h4 {
 	margin-bottom: 0px;
@@ -309,9 +308,7 @@ form > div {
 	/* width: 400px; */
 }
 
-
-
-p~button {
+p ~ button {
 	border: 1px solid #a785ff;
 	border-radius: 6px;
 	width: 231px;
@@ -320,10 +317,10 @@ p~button {
 	background-color: #0f0617;
 	color: white;
 }
-p~button:hover {
+p ~ button:hover {
 	border: 1px solid #a785ff;
 	border-radius: 6px;
-	padding:6px 8px;
+	padding: 6px 8px;
 	margin-top: 10px;
 	background-color: #a785ff;
 	color: black;

@@ -7,16 +7,12 @@
             content="IE=edge">
         <meta name="viewport"
             content="width=device-width, initial-scale=1.0">
-        <link rel="icon"
-            type="image/x-icon"
-            href="/Image/Logo_White_Round.ico">
-        <title>ZEEflix - Watch TV Shows, 100+ Originals, Movies, News &amp; Live TV Online</title>
+            <link rel="icon"
+                type="image/x-icon"
+                href="/Image/Logo_White_Round.ico">
+        <title>Search Result</title>
         <link rel="stylesheet"
-            href="Style/style.css">
-
-        <!-- <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> -->
-
-
+            href="Style/search.css">
     </head>
 
     <body>
@@ -47,7 +43,7 @@
                                 <input type="search"
                                     placeholder="Search Movies, TV Shows, Series By Title"
                                     id="nav_search">
-                                <div id="search_div"><img id="search_ico"
+                                <div><img id="search_ico"
                                         src="/Image/search_ico.png"
                                         alt="search"
                                         title="Search Now"></div>
@@ -73,98 +69,21 @@
             </nav>
         </header>
 
-        <!-- Slider Part written here -->
 
-        <div id="slider">
-            <a id="prev"
-                onclick="plusSlides(-1)">&#10094;</a>
-            <img id="image"
-                src="imagees/img1.jpg"
-                alt="">
-            <a id="next"
-                onclick="plusSlides(1)">&#10095;</a>
-        </div>
 
-        <!-- Main Part goes here -->
-        <div class="main_part">
-            <h2>Trending Near You</h2>
+        <!-- Main Data Goes Here -->
 
-            <div class="trending">
-                <!-- Append data here -->
+        <div class="result_ser">
 
-            </div>
-        </div>
+            <div class="display">
 
-        <!---zee5 footer code-->
-
-        <div class="i_frame">
-
-            <h2> Movies Trailer</h2>
-            <div id="i_one">
-                <div>
-                    <iframe width="450"
-                        height="315"
-                        src="https://www.youtube.com/embed/KNjBhoxNpvw"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div>
-                    <iframe width="450"
-                        height="315"
-                        src="https://www.youtube.com/embed/v042lAZ0QJw"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div>
-                    <iframe width="450"
-                        height="315"
-                        src="https://www.youtube.com/embed/Eue5kh-NODE"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div id="i_two">
-                <div>
-                    <iframe width="450"
-                        height="315"
-                        src="https://www.youtube.com/embed/uvSkdTmRMx8"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div>
-                    <iframe width="450"
-                        height="315"
-                        src="https://www.youtube.com/embed/13Jbnat1Pg0"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-                <div>
-                    <iframe width="450"
-                        height="315"
-                        src="https://www.youtube.com/embed/-yifxBMgIeI"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
+                <!-- Searched data appear here -->
 
             </div>
 
         </div>
 
-
-        <!--style="height:px;border-width:1;color:gray;background-color:rgb(32, 28, 28);margin-top: 15px;"> -->
-
+        <!-- Footer Goes Here -->
 
         <hr width="93%"
             size="1"
@@ -293,11 +212,98 @@
 
 </html>
 
-<script src="script.js"></script>
-
-
-<!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
 <script>
 
-</script> -->
+
+    function displayData (data) {
+        let trending = document.querySelector(".display");
+
+        trending.innerHTML=null;
+
+        data.forEach((ele) => {
+            let div = document.createElement("div");
+            let img = document.createElement("img");
+            img.src = ele.image;
+
+            let title = document.createElement("h3");
+            title.innerText = ele.tilte;
+
+            let runtime = document.createElement("p");
+            runtime.innerText = "Length : " + ele.runtime + "min";
+
+            let rating = document.createElement("p");
+            rating.innerText = "Rating : " + ele.rating + "⭐";
+
+            let watch = document.createElement("button");
+            watch.innerText = "Watch";
+
+            div.append(img, title, runtime, rating, watch);
+            trending.append(div);
+        })
+    }
+
+    function search () {
+        // window.location.href = "search.html";
+        let p = document.querySelector("input").value;
+        console.log(p);
+        let newData = bag.filter(function (ele) {
+            return ele.tilte.toLowerCase().includes(p.toLocaleLowerCase());
+        });
+        console.log(newData);
+        displayData(newData)
+    };
+
+
+
+
+    // ----------------------------------------------------------------
+
+//     let data = JSON.parse(sessionStorage.getItem("searchedData"));
+//         let cartItems =
+//             JSON.parse(localStorage.getItem("apan_e-store_cartproduct")) || [];
+//         if (data.length == 0) {
+//             document.querySelector("#subcontainer").innerHTML = ${
+//                 alert(
+//                     "Sorry No Result Found!!😔"
+//                 )
+//             }
+//    ${ (window.location.href = "index.html") }
+//             ;
+//         } else {
+//             function displayCards (data) {
+//                 document.querySelector("#subcontainer").innerHTML = "";
+//                 data.forEach((element) => {
+//                     let div = document.createElement("div");
+//                     let img = document.createElement("img");
+//                     img.setAttribute("src", element.avatar);
+//                     let discription = document.createElement("p");
+//                     let str = element.discription;
+//                     discription.innerText = ${ str.substring(0, 50) }...;
+//                 let price = document.createElement("h4");
+//                 price.innerHTML = <h4>&#8377; ${element.price}</h4>;
+//                 let offer = document.createElement("p");
+//                 offer.innerText = "OFFER AVAILABLE";
+//                 let cart_btn = document.createElement("button");
+//                 cart_btn.innerText = "Add To Cart";
+
+//                 cart_btn.addEventListener("click", function () {
+//                     if (cartItems.includes(element)) {
+//                         alert("Already Existing Item in Cart");
+//                     } else {
+//                         cartItems.push(element);
+//                         localStorage.setItem(
+//                             "apan_e-store_cartproduct",
+//                             JSON.stringify(cartItems)
+//                         );
+//                     }
+//                 });
+
+//                 div.append(img, discription, price, offer, cart_btn);
+//                 //    document.querySelector("#subcontainer").style.height+=250
+//                 document.querySelector("#subcontainer").append(div);
+//             });
+//         }
+//         displayCards(data);
+//  }
+
+</script>

@@ -27,13 +27,17 @@ function slides () {
         i = 0;
     }
 }
+slides();
 setInterval(slides, 3000);
+
+let bag = [];
 
 let data = fetch("https://63987501fe03352a94d1a25b.mockapi.io/home1")
     .then((res) => res.json())
     .then((data) => {
-        console.log(data)
-        displayData(data);
+        // console.log(data)
+        bag=data;
+        displayData(bag);
     });
 
 
@@ -62,4 +66,65 @@ function displayData (data) {
         trending.append(div);
     })
 }
-displayData(data);
+// displayData(data);
+
+
+// Searched result code refer here
+
+let searchInput = document.getElementById("nav_search");
+
+let search = document.getElementById("search_div");
+
+search.addEventListener("click", () => {
+    window.location.href ="search.html";
+})
+
+async function searchedData (searchInput) {
+    let data = await fetch(
+        `https://63987501fe03352a94d1a25b.mockapi.io/home1?filter=${searchInput.value}`
+    );
+    console.log(data);
+    let renderedData = await data.json();
+    console.log(renderedData)
+    sessionStorage.setItem("searchedData", JSON.stringify(renderedData));
+    window.location.href = "search.html";
+}
+
+// ----------------------------------------------------------------
+
+// let searchedInput = document.getElementById("searchInput");
+
+// let serachBtn = document.querySelector("#searchBar form");
+// serachBtn.addEventListener("submit", (event) => {
+//     event.preventDefault();
+
+//     console.log(searchedInput.value);
+//     searchedData(searchInput);
+// });
+
+// async function searchedData (searchedInput) {
+//     let data = await fetch(
+//         `https://63996f3916b0fdad773c979e.mockapi.io/products?filter=${searchedInput.value}`
+//     );
+//     console.log(data);
+//     let renderedData = await data.json();
+//     console.log(renderedData)
+//     sessionStorage.setItem("searchedData", JSON.stringify(renderedData));
+//     window.location.href = "searchedProduct.html";
+// }
+
+
+
+
+// function search () {
+//     window.location.href="search.html";
+//     let p = document.querySelector("input").value;
+//     console.log(p);
+//     let newData = bag.filter(function (ele) {
+//         return ele.tilte.toLowerCase().includes(p.toLocaleLowerCase());
+//     });
+//     console.log(newData);
+//     displayData(newData)
+// };
+
+
