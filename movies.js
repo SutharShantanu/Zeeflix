@@ -1,4 +1,5 @@
 
+
 // js for caousel
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
@@ -84,6 +85,31 @@ function handleHindiMovie(data) {
 
 function Zee5Movies(filteredMovies) {
     document.querySelector("#movies").innerHTML = "";
+
+    filteredMovies.forEach(function (element) {
+        let div = document.createElement("div")
+        let img = document.createElement("img")
+        img.setAttribute("src", element.image)
+
+        let title=document.createElement("p")
+        title.innerText="Title : "+element.title
+
+        let Duration=document.createElement("p")
+        Duration.innerHTML="Length : "+element.runtime+" Min"
+
+        let rating=document.createElement("p")
+        rating.innerText="Rating : "+element.rating+"⭐"
+
+        let watchBtn=document.createElement("button")
+        watchBtn.innerText="Watch"
+
+        watchBtn.addEventListener("click",()=>{
+           
+            window.location.href="movieOpen.html"
+
+        })
+        div.append(img,title,Duration,rating,watchBtn)
+
     filteredMovies.forEach(function (el) {
         let div = document.createElement("div")
         let img = document.createElement("img")
@@ -93,6 +119,7 @@ function Zee5Movies(filteredMovies) {
         let btn=document.createElement("button")
 
         div.append(img)
+
         document.querySelector("#movies").append(div)
     })
 }
@@ -103,7 +130,31 @@ function latestMovieDisplay(filteredMovies) {
         let div = document.createElement("div")
         let img = document.createElement("img")
         img.setAttribute("src", element.image)
+
+
+        let title=document.createElement("p")
+        title.innerText="Title :"+element.title
+
+        let Duration=document.createElement("p")
+        Duration.innerHTML="Length :"+element.runtime+" Min"
+
+        let rating=document.createElement("p")
+        rating.innerText="Rating :"+element.rating+"⭐"
+
+        let watchBtn=document.createElement("button")
+        watchBtn.innerText="Watch";
+
+        watchBtn.addEventListener("click",()=>{
+           
+            window.location.href="movieOpen.html"
+
+        })
+
+        div.append(img,title,Duration,rating,watchBtn)
+
+
         div.append(img)
+
         document.querySelector("#latestMovies").append(div)
     })
 
@@ -115,6 +166,60 @@ function hollywoodMovieDisplay(filteredMovies) {
         let div = document.createElement("div")
         let img = document.createElement("img")
         img.setAttribute("src", element.image)
+
+
+        let title=document.createElement("p")
+        title.innerText="Title :"+element.title
+
+        let Duration=document.createElement("p")
+        Duration.innerHTML="Length :"+element.runtime+" Min"
+
+        let rating=document.createElement("p")
+        rating.innerText="Rating :"+element.rating+"⭐"
+
+        let watchBtn=document.createElement("button")
+        watchBtn.innerText="Watch";
+
+        watchBtn.addEventListener("click",()=>{
+            
+            window.location.href="movieOpen.html"
+
+        })
+
+        div.append(img,title,Duration,rating,watchBtn)
+        document.querySelector("#hollywoodMovies").append(div)
+    })
+
+}
+
+function hindiMovieDisplay(filteredMovies) {
+    document.querySelector("#hindiMovies").innerHTML = "";
+    filteredMovies.forEach(function (element) {
+        let div = document.createElement("div")
+        let img = document.createElement("img")
+        img.setAttribute("src", element.image)
+
+        let title=document.createElement("p")
+        title.innerText="Title :"+element.title
+
+        let Duration=document.createElement("p")
+        Duration.innerHTML="Length :"+element.runtime+" Min"
+
+        let rating=document.createElement("p")
+        rating.innerText="Rating :"+element.rating+"⭐"
+
+        let watchBtn=document.createElement("button")
+        watchBtn.innerText="Watch";
+
+        watchBtn.addEventListener("click",()=>{
+           
+            window.location.href="movieOpen.html"
+        })
+
+        div.append(img,title,Duration,rating,watchBtn)
+
+        document.querySelector("#hindiMovies").append(div)
+=======
         div.append(img)
         document.querySelector("#hollywoodMovies").append(div)
     })
@@ -131,7 +236,6 @@ function hindiMovieDisplay(filteredMovies) {
         document.querySelector("#hindiMovies").append(div)
     })
 
-=======
 
 let bag = [];
 // var i=0;
@@ -247,9 +351,14 @@ function hollywoodMovieDisplay(filteredMovies) {
         img.setAttribute("src", element.image)
         div.append(img)
         document.querySelector("#hollywoodMovies").append(div)
+
     })
 
 }
+
+
+
+
 
 function hindiMovieDisplay(filteredMovies) {
     document.querySelector("#hindiMovies").innerHTML = "";
@@ -263,3 +372,4 @@ function hindiMovieDisplay(filteredMovies) {
 
 
 }
+

@@ -2,10 +2,23 @@
 body {
     background-color: rgb(24, 3, 44);
     color: white;
+    font-size: 15px;
+    font-family: arial, sans-serif;
+
+}
+h1{
+    margin-top: 40px;
+}
+
+
+body {
+    background-color: rgb(24, 3, 44);
+    color: white;
     font-size: 18px;
     font-family: arial, sans-serif;
 
 }
+
 
 /* navbar css start here  */
 
@@ -337,6 +350,57 @@ th {
     /* transition: ; */
 }
 
+
+#movies div {
+    border: 3px solid black;
+	margin: 0px 10px 30px 10px;
+	padding: 8px;
+	color: white;
+	border-radius: 6px;
+	transition: all 0.5s;
+}
+
+#movies div:hover {
+    transform: scale(1.05);
+    z-index: 2;
+	border: 3px solid white;
+	border-radius: 6px;
+	/* height: 450px; */
+	padding: 8px;
+	background-color: white;
+	color: #0f0617;
+
+}
+#Movies > div > h4 {
+	margin-bottom: 0px;
+}
+#Movies > div > p {
+	font-size: 12px;
+	margin-bottom: 0px;
+	font-weight: bolder;
+}
+#Movies > div > img {
+	border-radius: 6px 6px 6px 6px;
+	/* width: 400px; */
+}
+
+p~button {
+	border: 1px solid #a785ff;
+	border-radius: 6px;
+	width: 200px;
+	padding: 8px;
+	margin-top: 10px;
+	background-color: #0f0617;
+	color: white;
+}
+p~button:hover {
+	border: 1px solid #a785ff;
+	border-radius: 6px;
+	padding:6px 8px;
+	margin-top: 10px;
+	background-color: #a785ff;
+	color: black;
+
 #movies img {
     height: 300px;
     object-fit: cover;
@@ -364,6 +428,40 @@ th {
     /* overflow: hidden; */
 }
 
+
+#latestMovies div {
+    border: 3px solid black;
+	margin: 0px 10px 30px 10px;
+	padding: 8px;
+	color: white;
+	border-radius: 6px;
+	transition: all 0.5s;
+}
+
+#latestMovies div:hover {
+
+    transform: scale(1.05);
+    z-index: 2;
+	border: 3px solid white;
+	border-radius: 6px;
+	/* height: 450px; */
+	padding: 8px;
+	background-color: white;
+	color: #0f0617;
+}
+
+#Movies > div > h4 {
+	margin-bottom: 0px;
+}
+#Movies > div > p {
+	font-size: 12px;
+	margin-bottom: 0px;
+	font-weight: bolder;
+}
+#Movies > div > img {
+	border-radius: 6px 6px 6px 6px;
+	/* width: 400px; */
+
 #latestMovies img {
     height: 300px;
     object-fit: cover;
@@ -378,6 +476,7 @@ th {
     transform: scale(1.1);
     z-index: 2;
     border-bottom: 30px solid white;
+
 }
 
 #hollywoodMovies {
@@ -389,6 +488,40 @@ th {
     white-space: nowrap;
     cursor: pointer;
     /* overflow: hidden; */
+}
+
+
+#hollywoodMovies div {
+    border: 3px solid black;
+	margin: 0px 10px 30px 10px;
+	padding: 8px;
+	color: white;
+	border-radius: 6px;
+	transition: all 0.5s;
+}
+
+#hollywoodMovies div:hover {
+    transform: scale(1.05);
+    z-index: 2;
+	border: 3px solid white;
+	border-radius: 6px;
+	/* height: 450px; */
+	padding: 8px;
+	background-color: white;
+	color: #0f0617;
+
+}
+#hollywoodMovies > div > h4 {
+	margin-bottom: 0px;
+}
+#hollywoodMovies > div > p {
+	font-size: 12px;
+	margin-bottom: 0px;
+	font-weight: bolder;
+}
+#hollywoodMovies > div > img {
+	border-radius: 6px 6px 6px 6px;
+	/* width: 400px; */
 }
 
 #hollywoodMovies img {
@@ -408,6 +541,7 @@ th {
 
 }
 
+
 #hindiMovies {
     margin-top: 30px;
     display: flex;
@@ -418,6 +552,102 @@ th {
     cursor: pointer;
     /* overflow: hidden; */
 }
+
+
+#hindiMovies div {
+    border: 3px solid black;
+	margin: 0px 10px 30px 10px;
+	padding: 8px;
+	color: white;
+	border-radius: 6px;
+	transition: all 0.5s;
+}
+
+#hindiMovies div:hover {
+    transform: scale(1.05);
+    z-index: 2;
+	border: 3px solid white;
+	border-radius: 6px;
+	/* height: 450px; */
+	padding: 8px;
+	background-color: white;
+	color: #0f0617;
+
+}
+#hollywoodMovies > div > h4 {
+	margin-bottom: 0px;
+}
+#hollywoodMovies > div > p {
+	font-size: 12px;
+	margin-bottom: 0px;
+	font-weight: bolder;
+}
+#hollywoodMovies > div > img {
+	border-radius: 6px 6px 6px 6px;
+	/* width: 400px; */
+}
+
+.genre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+.genre div{
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(124, 100, 100, 0.3) 0px 1px 3px -1px;
+    transition: all 0.5s;
+}
+.genre div:hover{
+    transform: scale(1.05);
+    z-index: 2;
+	border: 3px solid white;
+	border-radius: 6px;
+	padding: 8px;
+	background-color: white;
+	color: #0f0617;
+    cursor: pointer;
+}
+.genre img{
+    width: 250px;
+    height: 150px;
+    /* border: 2px solid rgb(9, 214, 60); */
+
+}
+
+.superstar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+.superstar div{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(124, 100, 100, 0.3) 0px 1px 3px -1px;
+    transition: all 0.5s;
+}
+.superstar img{
+    display: flex;
+    justify-content: center;
+    border-radius: 70%;
+}
+.superstar div:hover{
+    transform: scale(1.05);
+    z-index: 1;
+	border: 2px solid white;
+	border-radius: 2px;
+	padding: 8px;
+	background-color: rgb(171, 129, 211);
+    cursor: pointer;
+}
+
+li{
+    padding: 8px;
+}
+
+
+
+
+
 
 #hindiMovies img {
     height: 300px;
@@ -435,6 +665,7 @@ th {
     border-bottom: 30px solid white;
 
 }
+
 
 /* footer css start here  */
 
@@ -632,8 +863,11 @@ footer h4 {
 
 .leftlogo h4 {
     margin-top: 0px;
+
 }
-=======
+
+}
+
 body {
     background-color: rgb(24, 3, 44);
     color: white;
@@ -848,4 +1082,5 @@ body {
     object-fit: cover;*/
     /* width: calc(100% /2);
     margin: 20px; */ 
+
 
