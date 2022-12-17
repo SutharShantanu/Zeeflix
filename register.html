@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #100617;
+        }
+
+        .container {
+            width: 40%;
+            /* margin: auto; */
+            height: 600px;
+            border: 10px solid black;
+            margin-top: 8%;
+            margin-left: 26%;
+
+        }
+
+
+        #imgGroup {
+            display: flex;
+            width: 60%;
+            /* border: 1px solid blue; */
+            height: 10%;
+            margin-left: 20%;
+            justify-content: space-evenly;
+            padding-top: 20px;
+        }
+
+        #apple {
+            width: 40px;
+            height: 40px;
+            /* border: 1px solid green; */
+            border-radius: 5%;
+        }
+
+        #goggle {
+            width: 40px;
+            height: 40px;
+        }
+
+        #facebook {
+            width: 40px;
+            height: 40px;
+        }
+
+        #twitter {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        #card1 {
+            padding-left: 30%;
+            color: white;
+        }
+
+        #card2 {
+            padding-left: 30%;
+            width: 100%;
+            height: 10%;
+            /* border: 1px solid green; */
+            text-align: justify;
+            color: white;
+        }
+
+        #or {
+            width: 100%;
+            /* height: 40%; */
+            /* border: 1px solid green; */
+            padding-left: 45%;
+            color: white;
+        }
+
+        #emailId {
+            width: 50%;
+            height: 5%;
+            margin-left: 30%;
+            color: white;
+            /* border: 1px solid green; */
+            background-color: grey;
+
+        }
+
+        #forgetPassword {
+            width: 50%;
+            height: 10%;
+            margin-left: 25%;
+            /* border: 1px solid green; */
+            text-align: center;
+            padding-top: 5%;
+            color: blueviolet;
+        }
+
+        #loginBtn {
+            width: 60%;
+            height: 7%;
+            margin-left: 25%;
+            border-radius: 5%;
+            font-size: 15px;
+            color: black;
+        }
+
+        #NewRegister {
+            display: flex;
+            width: 60%;
+            margin-left: 25%;
+            /* border: 1px solid blue; */
+            padding-left: 100px;
+        }
+
+        #ancherRegister {
+            margin-top: 14px;
+        }
+
+
+
+
+        #goggleSign {
+
+            display: flex;
+            width: 30%;
+            height: 50px;
+            /* border: 1px solid blue; */
+            justify-content: space-evenly;
+            margin-left: 30%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-top: 40px;
+            background-color: white;
+            margin-left: 35%;
+        }
+
+        #imgSign {
+            margin-top: 2%;
+            border-radius: 30px;
+
+
+        }
+
+        #checkboxDiv {
+            display: flex;
+            width: 100%;
+            height: 150px;
+            /* border: 1px solid blue; */
+            margin-top: -3%;
+            padding-left: 70px;
+
+        }
+
+
+        #checkboxHeading {
+            margin-top: 12%;
+            margin-left: 8%;
+            color: white;
+        }
+
+        #checkbox {
+            margin-left: 5%;
+            margin-top: 5%;
+            margin-right: -5%;
+        }
+
+        #RegisteredBtn {
+            width: 70%;
+            height: 50px;
+            /* border: 1px solid blue; */
+            /* justify-content: space-evenly; */
+            margin-left: 15%;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-top: -3%;
+            background-color: gray;
+            font-size: 15px;
+            color: white;
+        }
+
+        #email {
+            width: 70%;
+            height: 40px;
+            margin-left: 15%;
+            /* background-color: 1px solid #100617; */
+            /* background-color: grey; */
+            background-color: gray;
+
+        }
+
+        #email::placeholder {
+            font-size: 15px;
+            background-color: gray;
+            color: white;
+            padding-left: 10px;
+        }
+
+        /* 
+        #password {
+            width: 70%;
+            height: 40px;
+            border: 1px solid white;
+        } */
+
+        #NewZee {
+
+            color: white;
+        }
+
+        /* #inputDiv {
+
+            background-color: black;
+        } */
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div id="card">
+            <h3 id="card1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new
+                account</h3>
+            <div id='card2'>
+                <p id="card2Heading">Create a account to continue enjoying
+                    <br>uninterrupted video and
+                    personalised<br>
+                    <!-- &nbsp;&nbsp;&nbsp;  -->
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;experience
+                </p>
+                <!-- <p id="card2Heading2">personalised experience</p> -->
+            </div>
+        </div>
+
+        <div id="goggleSign"><img id="imgSign" src="
+            https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST-jWZ9zMMN1g2g7X__VPJ7p_LoekF2mQFzA&usqp=CAU" alt=""
+                id="goggle">
+            <h3 id="SignIn">Sign in</h3>
+        </div>
+
+
+
+        <h3 id="or">Or</h3>
+        <!-- <label for="checkbox">Mobile Number</label><br> -->
+        <!-- <div id="inputDiv"> -->
+        <input id='email' type="text" placeholder="Email"><br><br>
+        <!-- <input id="password" type="text" placeholder="Password"> -->
+        <!-- 
+        </div> -->
+        <div id="checkboxDiv">
+
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <h4 id="checkboxHeading">By procceding you agree to our Term of Services & <br>Privacy Policy
+            </h4>
+        </div>
+        <button id="RegisteredBtn">Register</button>
+        <div id="NewRegister">
+            <p id="NewZee">Already registered?</p>
+            <a id="ancherRegister" href="login.html">Login</a>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+<script src="./register.js">
+
+
+</script>

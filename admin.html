@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -310,3 +311,465 @@ async function DeleteBtn(id){
 
 
 </script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+            content="IE=edge">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <link rel="icon"
+            type="image/x-icon"
+            href="/Image/Logo_White_Round.ico">
+        <title>Admin | ZEEflix - Watch TV Shows, 100+ Originals, Movies, News &amp; Live TV Online</title>
+        <link rel="stylesheet"
+            href="style/admin.css">
+
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <img src="/Image/Logo_White_Round.png"
+                    alt="Logo_Croped">
+                <div class="nav_main">
+                    <div id="nav_link">
+                        <a href="index.html">Home</a>
+                        <a href="">TV Shows</a>
+                        <a href="">Movies</a>
+                        <a href="">Web Series</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">More</button>
+                            <div class="dropdown-content">
+                                <a href="#">Live TV</a>
+                                <a href="#">Music</a>
+                                <a href="#">Cricket</a>
+                                <a href="#">Kids</a>
+                                <a href="#">Premium Shows</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="nav_part">
+                        <div id="rest">
+                            <h1>Welcome Admin :)</h1>
+                            <button id="log_in">login</button>
+                            <div id="buy_plan"> <img src="/Image/setting.png"
+                                    alt="crown">
+                                <p>Admin</p>
+                            </div>
+                            <img id="ham"
+                                src="/Image/hamburger.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- For ADMIN side Main Data Goes here -->
+        <div class="part">
+
+            <div class="mainInput">
+
+                <div id="data">
+                    <h2>Add New Data</h2>
+                    <form>
+                        <input id="imgurl"
+                            type="url"
+                            placeholder="Image URL">
+                        <input id="title"
+                            type="text"
+                            placeholder="Title">
+                        <input id="Duration"
+                            type="number"
+                            placeholder="Duration">
+                        <input id="Rating"
+                            type="number"
+                            placeholder="Rating">
+                        <button id="submitBtn"
+                            type="submit">Submit</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Footer -->
+
+        <hr width="93%"
+            size="1"
+            color="#a785ff">
+        <footer id="footer">
+
+            <div class="container">
+
+                <br>
+
+                <div class="foot">
+                    <div class="top">
+                        <div class="store">
+                            <h4>Download Apps</h4>
+                            <a href="https://play.google.com/store/apps/details?id=com.graymatrix.did"
+                                target="_blank"><img src="https://www.zee5.com/images/play_store.png?ver=2.52.65"
+                                    alt=""></a>
+                            <a href="https://apps.apple.com/in/app/zee5-shows-live-tv-movies/id743691886"
+                                target="_blank"><img src="https://www.zee5.com/images/app_store.png?ver=2.52.65"
+                                    alt=""></a>
+                        </div>
+                        <div class="connect">
+                            <h4>Connect with us</h4>
+                            <a href="https://www.facebook.com/ZEE5/"
+                                target="_blank"><img src="/Image/facebook.png"
+                                    alt=""></a>
+                            <a href="https://www.instagram.com/zee5/"
+                                target="_blank"><img src="/Image/instagram.png"
+                                    alt=""></a>
+                            <a href="https://twitter.com/zee5india"
+                                target="_blank"><img src="/Image/twitter.png"
+                                    alt=""></a>
+                            <a href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ"
+                                target="_blank"><img src="/Image/youtube.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="about">
+                        <!-- about -->
+                        <p><a href="https://www.zee5.com/aboutus">About Us</a></p>
+
+                        <p>|</p>
+                        <!-- help center -->
+                        <p><a href="https://helpcenter.zee5.com/portal/en/home">Help Center</a></p>
+
+                        <p>|</p>
+                        <!-- Privacy policy -->
+                        <p><a href="https://www.zee5.com/privacypolicy">Privacy Policy</a></p>
+                        <p>|</p>
+                        <!-- Privacy policy -->
+                        <p><a href="https://www.zee5.com/termsofuse">Terms of Use</a></p>
+
+
+
+
+                    </div>
+                    <div class="row">
+                        <div class="footer-col">
+                            <h3>Popular TV Shows</h3>
+
+
+                            <div><a
+                                    href="https://www.zee5.com/movies/details/kya-meri-sonam-gupta-bewafa-hai/0-0-1z51625">Kumkum
+                                    Bhagya</a></div>
+                            <div><a href="">Kundali Bhagya</a></div>
+                            <div><a href="">Bhagya Lakshmi</a></div>
+                            <div><a href="">Tujhse Hai Raabta</a></div>
+                            <div><a href="">Kyun Rishton Mein Katti Batti</a></div>
+
+
+
+                        </div>
+                        <div class="footer-col">
+                            <h3>Premium Movies</h3>
+
+                            <div><a href="">Kya Meri Sonam Gupta Bewafa</a></div>
+                            <div><a href="">Helmet</a></div>
+                            <div><a href="">200 Halla Ho</a></div>
+                            <div><a href="">14 Phere</a></div>
+                            <div><a href="">Dial 100</a></div>
+
+                        </div>
+
+                        <div class="footer-col">
+                            <h3>Popular LIVE TV Channels</h3>
+
+                            <div><a href="">Aaj Tak</a></div>
+                            <div><a href="">Zee News</a></div>
+                            <div><a href="">Zee Tv HD</a></div>
+                            <div><a href="">&TV HD</a></div>
+                            <div><a href="">Zee Marathi HD</a></div>
+
+                        </div>
+                        <div class="footer-col">
+                            <h3>Popular Web Series</h3>
+
+                            <div><a href="">Sunflower</a></div>
+                            <div><a href="">Jeet Ki Zid</a></div>
+                            <div><a href="">Biccho Ka Khel</a></div>
+                            <div><a href="">State of Seige:26/11</a></div>
+                            <div><a href="">Naxalbari</a></div>
+
+                        </div>
+                        <div class="footer-col">
+                            <h3>Bollywood Top Celebrities</h3>
+
+                            <div><a href="">Sunny Leone</a></div>
+                            <div><a href="">Disha Patani</a></div>
+                            <div><a href="">Deepika Padukone</a></div>
+                            <div><a href="">Salman Khan</a></div>
+                            <div><a href="">Nora Fatehi</a></div>
+
+                        </div>
+                    </div>
+                    <div class="end">Best viewed on Google Chrome 80+, Microsoft Edge 81+, Mozilla Firefox 75+,
+                        Safari
+                        5.1.5+
+                        Copyright © 2022 Zee Entertainment Enterprises Ltd. All rights reserved.</div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
+
+<script>
+    // let img = document.getElementById("imgurl").value;
+    // console.log(img);
+    // let name = document.querySelector("#title").value;
+    // console.log(name)
+    // let runtime = document.querySelector("#Duration").value;
+    // let rating = document.querySelector("#Rating").value;
+
+    let form = document.querySelector("form");
+
+    let arr = [];
+
+    // let sub_btn = document.querySelector("#submitBtn");
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        let obj = {
+            img: form.imgurl.value,
+            title: form.title.value,
+            runtime: form.Duration.value,
+            rating: form.Rating.value,
+        }
+        // console.log(obj);
+        arr.push(obj);
+    })
+    console.log(arr);
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border-radius: 1rem;
+            width:25%;
+            height:400px;
+            margin-top: 50px;
+            margin-left: 20px;
+            background-color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        input{
+            margin-bottom: 30px;
+            padding: 10px 40px;
+            margin-left: 35px;
+            border: none;
+            border: 1px solid gray;
+        }
+        h1{
+        
+            margin-left: 35px;
+          
+            color: rgb(11, 92, 61);
+        }
+        .button{
+            border: none;
+            padding: 10px 100px;
+            margin-left: 35px;
+            border: 1px solid gray;
+        }
+        .button:hover{
+            background-color: rgb(32, 205, 32);
+            cursor: pointer;
+        }
+        body{
+            background-color: rgb(92, 6, 46);
+        }
+
+        #main{
+            width:70%;
+            height:auto;
+         margin-left: 25px;
+         margin-top: 30px;
+            border:1px solid white;
+           padding-left: 45px;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+          
+           
+
+        }
+        #top{
+            display: flex;
+        }
+#main>div{
+ 
+    width: 70%;
+}
+        #main>div>img{
+            width:100%;
+            height:200px;
+            border: 1px solid white;
+        }
+        button{
+            background-color: red;
+            color:white;
+            border:none;
+            padding: 3px 20px;
+            margin-left: 30px;
+            border-radius: 0.4rem;
+            margin-bottom: 20px;
+        }
+        .h1{
+            text-align: center;
+            background-color: rgb(254, 225, 255);
+          
+        }
+        #main_bar>button{
+            background-color: orange;
+            color:white;
+            border:none;
+            padding: 20px 40px;
+            margin-left: 30px;
+            border-radius: 0.4rem;
+            margin-bottom: 20px;
+        }
+
+        #main_bar>button:hover{
+            cursor: pointer;
+            background-color: green;
+        }
+        .foot {
+	margin: auto;
+	/* width: 86%; */
+}
+
+    </style>
+</head>
+<body>
+ 
+   <div id="top">
+    <form id="form" action="">
+        <h1>ADD DATA HERE</h1>
+        <input type="url" placeholder="Enter Url here"><br><input type="text"  placeholder="Enter Title here"><br><input type="number"  placeholder="Enter Rating here"><br><input type="text"  placeholder="Enter ID here"><br><input class="button"   type="submit">
+    </form>
+    <div id="main">
+
+    </div>
+   </div>
+   
+  
+</body>
+</html>
+<script>
+
+
+const submit_btn = document.querySelector("form");
+submit_btn.addEventListener("submit",RegisterFunction);
+
+// Make API request to server for registering the new user.
+async function RegisterFunction(event) {
+  try {
+    event.preventDefault();
+    let all_input_tags = document.querySelectorAll("#form input");
+    let userObj = {};
+    for (let i = 0; i < all_input_tags.length - 1; i++) {
+      userObj[all_input_tags[i].ima] = all_input_tags[i].value;
+    }
+    
+    let res = await fetch("https://63987501fe03352a94d1a25b.mockapi.io/home1", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(userObj)
+    });
+    if(res.ok){
+        alert("Movie Sucessfully added !!",);
+        display(data)
+       
+    }else{
+        alert("Something went wrong");
+    }
+  } catch (error) {
+    
+  }
+}
+
+       let bag=[];
+fetch("https://63987501fe03352a94d1a25b.mockapi.io/home1")
+.then((res)=>res.json())
+.then((data)=>{
+  bag=data
+  console.log(data)
+  display(data)
+})
+
+
+
+display(bag)
+function display(data){
+document.querySelector("#main").innerHTML="";
+data.forEach(function(el){
+  let div=document.createElement("div")
+  let img=document.createElement("img")
+  img.setAttribute("src",el.image)
+ let btn = document.createElement("button")
+ btn.innerText="Delete"
+ btn.setAttribute.data_id = el.id
+ btn.addEventListener("click",(event)=>{
+    let data_id = event.target.dataset.id;
+			console.log(data_id,typeof data_id);
+			// DeleteBtn(data_id);
+})
+ 
+  
+
+
+
+  div.append(img,btn)
+  document.querySelector("#main").append(div)
+  
+})
+}
+
+async function DeleteBtn(id){
+	try {
+		let delete_request = await fetch(`https://63987501fe03352a94d1a25b.mockapi.io/home1/${id}`,{
+            method : "DELETE",
+            headers : {
+                "Content-Type": "application/json",
+            },
+        });
+        if(delete_request.ok){
+			
+          display(data)
+        }
+	}
+	
+	catch (error) {
+		alert("You don't have access.")	
+	}
+}
+
+
+
+
+
+</script>
+
