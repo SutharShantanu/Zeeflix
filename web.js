@@ -19,12 +19,17 @@ data.forEach(function(el){
   let img=document.createElement("img")
   img.setAttribute("src",el.img)
 
+
+
   img.addEventListener("click",()=>{
     window.location.href="./Web2.html"
   })
   let btn =document.createElement("button")
   btn.innerText="Play"
   
+
+
+
 
 
   
@@ -35,9 +40,13 @@ data.forEach(function(el){
   div.append(img,btn)
 
 
+  div.append(img,btn)
+
+
 
 
   div.append(img)
+
 
   document.querySelector("#container_1").append(div)
   
@@ -64,6 +73,9 @@ data.forEach(function(el){
   let img=document.createElement("img")
   img.setAttribute("src",el.img)
 
+
+
+
   let btn =document.createElement("button")
   btn.innerText="Play"
 
@@ -75,7 +87,10 @@ data.forEach(function(el){
 
 
 
+
+
   div.append(img)
+
 
   document.querySelector("#container_2").append(div)
   
@@ -101,6 +116,9 @@ data.forEach(function(el){
   let img=document.createElement("img")
   img.setAttribute("src",el.img)
 
+
+
+
   let btn =document.createElement("button")
   btn.innerText="Play"
 
@@ -108,10 +126,14 @@ data.forEach(function(el){
 
 
 
+  div.append(img,btn)
+
+
 
   div.append(img,btn)
 
   div.append(img)
+
 
   document.querySelector("#container_3").append(div)
   
@@ -136,6 +158,9 @@ data.forEach(function(el){
   let img=document.createElement("img")
   img.setAttribute("src",el.img)
 
+
+
+
   let btn =document.createElement("button")
   btn.innerText="Play"
 
@@ -147,7 +172,10 @@ data.forEach(function(el){
 
 
 
+
+
   div.append(img)
+
 
   document.querySelector("#container_4").append(div)
   
@@ -172,6 +200,9 @@ data.forEach(function(el){
   let img=document.createElement("img")
   img.setAttribute("src",el.img)
 
+
+
+
   let btn =document.createElement("button")
   btn.innerText="Play"
  
@@ -184,12 +215,18 @@ data.forEach(function(el){
 
 
 
+
+
   div.append(img)
+
 
   document.querySelector("#container_5").append(div)
   
 })
 }
+
+
+
 
 
 
@@ -216,6 +253,10 @@ data.forEach(function(el){
   img.setAttribute("src",el.img)
   let title = document.createElement("h3")
   title.innerText=el.title
+
+  
+
+
 
 
 
@@ -394,6 +435,10 @@ data.forEach(function(el){
 //     },2000)
 
 
+
+
+
+
 // const slides =document.querySelectorAll(".slide")
 // var count=0;
 // slides.forEach(
@@ -424,6 +469,9 @@ data.forEach(function(el){
 const swiper = new Swiper('.swiper', {
   
 
+  direction: 'horizontal',
+
+
   autoplay:{
     delay:2000,
    disableOnInteraction:false,
@@ -446,6 +494,8 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+
 
 
 
@@ -478,4 +528,5 @@ let i=0;
         displayData(data)
     },2000)
    
+
 
