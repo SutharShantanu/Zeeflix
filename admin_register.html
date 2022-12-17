@@ -79,7 +79,7 @@
 
         #emailId {
             width: 50%;
-            height: 5%;
+            height: 40px;
             margin-left: 30%;
             color: white;
             /* border: 1px solid green; */
@@ -96,13 +96,20 @@
         #passwordId {
             margin-top: 20px;
             width: 50%;
-            height: 20%;
+            height: 40px;
             margin-left: 30%;
             color: white;
             /* border: 1px solid green; */
             background-color: grey;
 
         }
+
+        #passwordId::placeholder {
+            font-size: 13px;
+            color: white;
+            padding-left: 10px;
+        }
+
 
         #forgetPassword {
             width: 50%;
@@ -115,12 +122,9 @@
         }
 
         #loginBtn {
-            width: 60%;
-            height: 7%;
-            margin-left: 25%;
             border-radius: 5%;
             font-size: 15px;
-            color: black;
+
         }
 
         #NewRegister {
@@ -165,6 +169,8 @@
             height: 150px;
             /* border: 1px solid blue; */
             margin-top: -3%;
+            /* margin-left: 10%; */
+            padding-left: 70px;
 
         }
 
@@ -176,7 +182,7 @@
         }
 
         #checkbox {
-            margin-left: 5%;
+            margin-left: 10%;
             margin-top: 5%;
         }
 
@@ -208,11 +214,6 @@
         #NewZee {
 
             color: white;
-        }
-
-        #inputDiv {
-
-            background-color: black;
         }
     </style>
 </head>
@@ -254,13 +255,13 @@
         <div id="checkboxDiv">
 
             <input type="checkbox" name="checkbox" id="checkbox">
-            <h4 id="checkboxHeading">By procceding you agree to our Term of Services & <br>Privacy Policy
+            <h4 id="checkboxHeading">By procceding you agree to our Term of <br> Services& Privacy Policy
             </h4>
         </div>
-        <button id="RegisteredBtn">Register</button>
+        <button type='click' id="RegisteredBtn">Register</button>
         <div id="NewRegister">
             <p id="NewZee">Already registered?</p>
-            <a id="ancherRegister" href="login.html">Login</a>
+            <a id="ancherRegister" href="admin_login.html">Login</a>
         </div>
 
     </div>
@@ -272,7 +273,16 @@
 </html>
 
 
-<script src="admin/register.js">
+<!-- <script document.getElementById('goggleSign').addEventListener('click', goggleWeb) function goggleWeb() {
+    window.location.href='https://www.google.com/' document.getElementById('RegisteredBtn').addEventListener('click',
+    valid) function valid(event) { event.preventDefault() console.log('yes'); let
+    email=document.getElementById('emailId').value; let password=document.getElementById('passwordId').value;
+    localStorage.setItem('email1', email) localStorage.setItem('password1', password) } 
+</script> -->
+
+
+<script src="admin_register.js">
+
 
 
 </script>

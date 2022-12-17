@@ -148,6 +148,7 @@
             height: 150px;
             /* border: 1px solid blue; */
             margin-top: -3%;
+            padding-left: 70px;
 
         }
 
@@ -161,6 +162,7 @@
         #checkbox {
             margin-left: 5%;
             margin-top: 5%;
+            margin-right: -5%;
         }
 
         #RegisteredBtn {
@@ -171,14 +173,26 @@
             margin-left: 15%;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             margin-top: -3%;
+            background-color: gray;
+            font-size: 15px;
+            color: white;
         }
 
         #email {
             width: 70%;
-            height: 50px;
+            height: 40px;
             margin-left: 15%;
             /* background-color: 1px solid #100617; */
             /* background-color: grey; */
+            background-color: gray;
+
+        }
+
+        #email::placeholder {
+            font-size: 15px;
+            background-color: gray;
+            color: white;
+            padding-left: 10px;
         }
 
         /* 
@@ -193,10 +207,10 @@
             color: white;
         }
 
-        #inputDiv {
+        /* #inputDiv {
 
             background-color: black;
-        }
+        } */
     </style>
 </head>
 
@@ -229,11 +243,11 @@
 
         <h3 id="or">Or</h3>
         <!-- <label for="checkbox">Mobile Number</label><br> -->
-        <div id="inputDiv">
-            <input id='email' type="text" placeholder="Email"><br><br>
-            <!-- <input id="password" type="text" placeholder="Password"> -->
-
-        </div>
+        <!-- <div id="inputDiv"> -->
+        <input id='email' type="text" placeholder="Email"><br><br>
+        <!-- <input id="password" type="text" placeholder="Password"> -->
+        <!-- 
+        </div> -->
         <div id="checkboxDiv">
 
             <input type="checkbox" name="checkbox" id="checkbox">
