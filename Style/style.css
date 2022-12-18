@@ -295,7 +295,7 @@ form > div {
 	background-color: white;
 	color: #0f0617;
 }
-.trending > div > h4 {
+.trending > div > h3 {
 	margin-bottom: 0px;
 }
 .trending > div > p {
@@ -305,7 +305,7 @@ form > div {
 }
 .trending > div > img {
 	border-radius: 6px 6px 6px 6px;
-	/* width: 400px; */
+	width: 100%;
 }
 
 p ~ button {
@@ -316,11 +316,12 @@ p ~ button {
 	margin-top: 10px;
 	background-color: #0f0617;
 	color: white;
+	transition: all .5s;
 }
 p ~ button:hover {
 	border: 1px solid #a785ff;
 	border-radius: 6px;
-	padding: 6px 8px;
+	padding: 8px;
 	margin-top: 10px;
 	background-color: #a785ff;
 	color: black;

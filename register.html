@@ -1,270 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background-color: #100617;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"
+            content="IE=edge">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <link rel="icon"
+            type="image/x-icon"
+            href="/Image/Logo_White_Round.ico">
+        <title>User Registration || ZEEflix - Watch TV Shows, 100+ Originals, Movies, News &amp; Live TV Online</title>
+        <style>
+            * {
+                font-family: NotoSansMedium, sans-serif;
+                color: white;
+                background-color: #0f0617;
+                text-align: center;
 
-        .container {
-            width: 40%;
-            /* margin: auto; */
-            height: 600px;
-            border: 10px solid black;
-            margin-top: 8%;
-            margin-left: 26%;
+            }
 
-        }
+            body {
+                /* background-color: white; */
+                margin: 0px;
+            }
 
+            .container {
+                border: 3px solid #a785ff;
+                border-radius: 6px;
+                width: 35%;
+                margin: 90px auto;
+                box-shadow: rgb(167, 133, 255) 0px 3px 8px;
+                background-color: #0f0617;
+                padding: 20px;
+            }
 
-        #imgGroup {
-            display: flex;
-            width: 60%;
-            /* border: 1px solid blue; */
-            height: 10%;
-            margin-left: 20%;
-            justify-content: space-evenly;
-            padding-top: 20px;
-        }
+            header>h3 {
+                width: 50%;
+                margin: 40px auto 0px auto;
+            }
 
-        #apple {
-            width: 40px;
-            height: 40px;
-            /* border: 1px solid green; */
-            border-radius: 5%;
-        }
+            #goggleSign {
+                /* border: 1px solid red; */
+                display: flex;
+                justify-content: space-between;
+                width: 25%;
+                margin: auto;
+                padding: 6px;
+                transition: all .5s;
+            }
 
-        #goggle {
-            width: 40px;
-            height: 40px;
-        }
+            #goggleSign:hover {
+                border-radius: 6px;
+                box-shadow: rgb(167, 133, 255) 0px 3px 8px;
 
-        #facebook {
-            width: 40px;
-            height: 40px;
-        }
+            }
 
-        #twitter {
-            width: 40px;
-            height: 40px;
-        }
-
-
-        #card1 {
-            padding-left: 30%;
-            color: white;
-        }
-
-        #card2 {
-            padding-left: 30%;
-            width: 100%;
-            height: 10%;
-            /* border: 1px solid green; */
-            text-align: justify;
-            color: white;
-        }
-
-        #or {
-            width: 100%;
-            /* height: 40%; */
-            /* border: 1px solid green; */
-            padding-left: 45%;
-            color: white;
-        }
-
-        #emailId {
-            width: 50%;
-            height: 5%;
-            margin-left: 30%;
-            color: white;
-            /* border: 1px solid green; */
-            background-color: grey;
-
-        }
-
-        #forgetPassword {
-            width: 50%;
-            height: 10%;
-            margin-left: 25%;
-            /* border: 1px solid green; */
-            text-align: center;
-            padding-top: 5%;
-            color: blueviolet;
-        }
-
-        #loginBtn {
-            width: 60%;
-            height: 7%;
-            margin-left: 25%;
-            border-radius: 5%;
-            font-size: 15px;
-            color: black;
-        }
-
-        #NewRegister {
-            display: flex;
-            width: 60%;
-            margin-left: 25%;
-            /* border: 1px solid blue; */
-            padding-left: 100px;
-        }
-
-        #ancherRegister {
-            margin-top: 14px;
-        }
+            #imgSign {
+                width: 60px;
+                /* height: 50px; */
+            }
 
 
+            #card2Heading {
+                /* margin-top: -3%; */
+                margin: 16px auto;
+                width: 85%;
+                color: grey;
+
+            }
+
+            #or {
+                width: 100%;
+                color: white;
+            }
+
+            #emailId {
+                border: 1px solid #a785ff;
+                /* background-color: white; */
+                width: 80%;
+                padding: 15px;
+                border-radius: 6px;
+                transition: all .5s;
+                text-align: left;
+            }
+
+            #emailId:hover {
+                outline: 1px solid #8230c6;
+                /* box-shadow: rgb(167, 133, 255) 0px 3px 8px; */
+            }
+
+            #emailId:focus {
+                outline: 1px solid #8230c6;
+            }
+
+            #emailId::placeholder {
+                color: white;
+            }
 
 
-        #goggleSign {
+            #passwordId {
+                border: 1px solid #a785ff;
+                /* background-color: white; */
+                margin: 20px auto;
+                width: 80%;
+                padding: 15px;
+                border-radius: 6px;
+                transition: all .5s;
+                text-align: left;
 
-            display: flex;
-            width: 30%;
-            height: 50px;
-            /* border: 1px solid blue; */
-            justify-content: space-evenly;
-            margin-left: 30%;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            margin-top: 40px;
-            background-color: white;
-            margin-left: 35%;
-        }
+            }
 
-        #imgSign {
-            margin-top: 2%;
-            border-radius: 30px;
+            #passwordId:hover {
+                outline: 1px solid #8230c6;
+                /* box-shadow: rgb(167, 133, 255) 0px 3px 8px; */
+            }
 
+            #passwordId::placeholder {
+                color: white;
+            }
 
-        }
+            #passwordId:focus {
+                outline: 1px solid #8230c6;
+            }
 
-        #checkboxDiv {
-            display: flex;
-            width: 100%;
-            height: 150px;
-            /* border: 1px solid blue; */
-            margin-top: -3%;
-            padding-left: 70px;
+            #checkboxDiv {
+                /* border: 1px solid red; */
+                width: 86%;
+                margin: auto;
+                display: flex;
+            }
 
-        }
-
-
-        #checkboxHeading {
-            margin-top: 12%;
-            margin-left: 8%;
-            color: white;
-        }
-
-        #checkbox {
-            margin-left: 5%;
-            margin-top: 5%;
-            margin-right: -5%;
-        }
-
-        #RegisteredBtn {
-            width: 70%;
-            height: 50px;
-            /* border: 1px solid blue; */
-            /* justify-content: space-evenly; */
-            margin-left: 15%;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            margin-top: -3%;
-            background-color: gray;
-            font-size: 15px;
-            color: white;
-        }
-
-        #email {
-            width: 70%;
-            height: 40px;
-            margin-left: 15%;
-            /* background-color: 1px solid #100617; */
-            /* background-color: grey; */
-            background-color: gray;
-
-        }
-
-        #email::placeholder {
-            font-size: 15px;
-            background-color: gray;
-            color: white;
-            padding-left: 10px;
-        }
-
-        /* 
-        #password {
-            width: 70%;
-            height: 40px;
-            border: 1px solid white;
-        } */
-
-        #NewZee {
-
-            color: white;
-        }
-
-        /* #inputDiv {
-
-            background-color: black;
-        } */
-    </style>
-</head>
+            #checkboxHeading {
+                margin: 13px auto 13px auto;
+                width: 100%;
+                text-align: left;
+                font-size: small;
+                letter-spacing: 1.1px;
+                padding: 6px;
+            }
 
 
-<body>
+            #RegisteredBtn {
+                border: 1px solid #a785ff;
+                /* background-color: white; */
+                margin: auto;
+                width: 86%;
+                padding: 15px;
+                border-radius: 6px;
+                transition: all .5s;
+            }
 
-    <div class="container">
-        <div id="card">
-            <h3 id="card1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new
-                account</h3>
-            <div id='card2'>
-                <p id="card2Heading">Create a account to continue enjoying
-                    <br>uninterrupted video and
-                    personalised<br>
-                    <!-- &nbsp;&nbsp;&nbsp;  -->
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;experience
-                </p>
-                <!-- <p id="card2Heading2">personalised experience</p> -->
+            #RegisteredBtn:hover {
+                background-color: #a785ff;
+                border: 1px solid #a785ff;
+                cursor: pointer;
+            }
+
+            #NewRegister {
+                display: flex;
+                width: 37%;
+                justify-content: space-around;
+                margin: auto;
+
+                transition: all .5s;
+            }
+
+            #ancherRegister {
+                color: #a785ff;
+                margin-top: 15px;
+                text-decoration: none;
+            }
+
+            #ancherRegister:hover {
+                color: #8230c6;
+                text-decoration: underline;
+
+            }
+        </style>
+    </head>
+
+
+    <body>
+
+        <div class="container">
+            <div id="card">
+                <h3 id="card1">Create a new
+                    account</h3>
+                <div id='card2'>
+                    <p id="card2Heading">Create a account to continue enjoying uninterrupted video and
+                        personalised experience
+                    </p>
+                    <!-- <p id="card2Heading2">personalised experience</p> -->
+                </div>
             </div>
+
+            <div id="goggleSign"><img id="imgSign"
+                    src="/Login_img/search.png"
+                    alt=""
+                    id="goggle">
+                <h3 id="SignIn">Sign in</h3>
+            </div>
+
+
+
+            <h3 id="or">Or</h3>
+
+            <div id="inputDiv">
+                <input id='emailId'
+                    type="text"
+                    placeholder="Please enter Email address">
+                <!-- <input id="passwordId"
+                    type="text"
+                    placeholder="Password"> -->
+
+            </div>
+            <div id="checkboxDiv">
+                <input type="checkbox"
+                    name="checkbox"
+                    id="checkbox"
+                    required>
+                <h4 id="checkboxHeading">By procceding you agree to our Term of Services & Privacy Policy
+                </h4>
+            </div>
+            <button id="RegisteredBtn">Register</button>
+            <div id="NewRegister">
+                <p id="NewZee">Already registered?</p>
+                <a id="ancherRegister"
+                    href="login.html">Login</a>
+            </div>
+
         </div>
 
-        <div id="goggleSign"><img id="imgSign" src="
-            https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST-jWZ9zMMN1g2g7X__VPJ7p_LoekF2mQFzA&usqp=CAU" alt=""
-                id="goggle">
-            <h3 id="SignIn">Sign in</h3>
-        </div>
 
 
-
-        <h3 id="or">Or</h3>
-        <!-- <label for="checkbox">Mobile Number</label><br> -->
-        <!-- <div id="inputDiv"> -->
-        <input id='email' type="text" placeholder="Email"><br><br>
-        <!-- <input id="password" type="text" placeholder="Password"> -->
-        <!-- 
-        </div> -->
-        <div id="checkboxDiv">
-
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <h4 id="checkboxHeading">By procceding you agree to our Term of Services & <br>Privacy Policy
-            </h4>
-        </div>
-        <button id="RegisteredBtn">Register</button>
-        <div id="NewRegister">
-            <p id="NewZee">Already registered?</p>
-            <a id="ancherRegister" href="login.html">Login</a>
-        </div>
-
-    </div>
-
-
-
-</body>
+    </body>
 
 </html>
 

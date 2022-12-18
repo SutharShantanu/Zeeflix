@@ -7,9 +7,9 @@
             content="IE=edge">
         <meta name="viewport"
             content="width=device-width, initial-scale=1.0">
-            <link rel="icon"
-                type="image/x-icon"
-                href="/Image/Logo_White_Round.ico">
+        <link rel="icon"
+            type="image/x-icon"
+            href="/Image/Logo_White_Round.ico">
         <title>Search Result</title>
         <link rel="stylesheet"
             href="Style/search.css">
@@ -74,7 +74,7 @@
         <!-- Main Data Goes Here -->
 
         <div class="result_ser">
-
+            <h2>Search Result :- </h2>
             <div class="display">
 
                 <!-- Searched data appear here -->
@@ -213,74 +213,70 @@
 </html>
 
 <script>
+    let data = JSON.parse(sessionStorage.getItem("searchedData"));
+    if (data.length == 0) {
+        document.querySelector(".display").innerHTML = `${alert(
+            "Sorry No Result Found !"
+        )}
+   ${(window.location.href = "index.html")}
+    `;
+    } else {
 
 
-    function displayData (data) {
-        let trending = document.querySelector(".display");
+        function displayData (data) {
+            let trending = document.querySelector(".display");
 
-        trending.innerHTML=null;
+            trending.innerHTML = null;
 
-        data.forEach((ele) => {
-            let div = document.createElement("div");
-            let img = document.createElement("img");
-            img.src = ele.image;
+            data.forEach((ele) => {
+                let div = document.createElement("div");
+                let img = document.createElement("img");
+                img.src = ele.image;
 
-            let title = document.createElement("h3");
-            title.innerText = ele.tilte;
+                let title = document.createElement("h3");
+                title.innerText = ele.tilte;
 
-            let runtime = document.createElement("p");
-            runtime.innerText = "Length : " + ele.runtime + "min";
+                let runtime = document.createElement("p");
+                runtime.innerText = "Length : " + ele.runtime + "min";
 
-            let rating = document.createElement("p");
-            rating.innerText = "Rating : " + ele.rating + "⭐";
+                let rating = document.createElement("p");
+                rating.innerText = "Rating : " + ele.rating + "⭐";
 
-            let watch = document.createElement("button");
-            watch.innerText = "Watch";
+                let watch = document.createElement("button");
+                watch.innerText = "Watch";
 
-            div.append(img, title, runtime, rating, watch);
-            trending.append(div);
-        })
+                div.append(img, title, runtime, rating, watch);
+                trending.append(div);
+            });
+        }
+        displayData(data)
+
     }
-
-    function search () {
-        // window.location.href = "search.html";
-        let p = document.querySelector("input").value;
-        console.log(p);
-        let newData = bag.filter(function (ele) {
-            return ele.tilte.toLowerCase().includes(p.toLocaleLowerCase());
-        });
-        console.log(newData);
-        displayData(newData)
-    };
-
-
 
 
     // ----------------------------------------------------------------
 
 //     let data = JSON.parse(sessionStorage.getItem("searchedData"));
-//         let cartItems =
-//             JSON.parse(localStorage.getItem("apan_e-store_cartproduct")) || [];
-//         if (data.length == 0) {
-//             document.querySelector("#subcontainer").innerHTML = ${
-//                 alert(
-//                     "Sorry No Result Found!!😔"
-//                 )
-//             }
-//    ${ (window.location.href = "index.html") }
-//             ;
-//         } else {
-//             function displayCards (data) {
-//                 document.querySelector("#subcontainer").innerHTML = "";
-//                 data.forEach((element) => {
-//                     let div = document.createElement("div");
-//                     let img = document.createElement("img");
-//                     img.setAttribute("src", element.avatar);
-//                     let discription = document.createElement("p");
-//                     let str = element.discription;
-//                     discription.innerText = ${ str.substring(0, 50) }...;
+
+//
+//     if (data.length == 0) {
+//         document.querySelector("#subcontainer").innerHTML = `${ alert(
+//             "Sorry No Result Found!!😔"
+//         )}
+//    ${(window.location.href = "index.html")}
+//     `;
+//     } else {
+//         function displayCards (data) {
+//             document.querySelector("#subcontainer").innerHTML = "";
+//             data.forEach((element) => {
+//                 let div = document.createElement("div");
+//                 let img = document.createElement("img");
+//                 img.setAttribute("src", element.avatar);
+//                 let discription = document.createElement("p");
+//                 let str = element.discription;
+//                 discription.innerText = `${str.substring(0, 50)}...`;
 //                 let price = document.createElement("h4");
-//                 price.innerHTML = <h4>&#8377; ${element.price}</h4>;
+//                 price.innerHTML = `<h4>&#8377; ${element.price}</h4>`;
 //                 let offer = document.createElement("p");
 //                 offer.innerText = "OFFER AVAILABLE";
 //                 let cart_btn = document.createElement("button");
@@ -304,6 +300,6 @@
 //             });
 //         }
 //         displayCards(data);
-//  }
+//     }
 
 </script>

@@ -140,15 +140,17 @@ form > div {
 	border: 1px solid white;
 	text-transform: uppercase;
 	background-color: #0f0617;
-	color: white;
 	font-size: 12px;
 	font-weight: 700;
-	padding: 0px 20px;
+	padding: 15px 20px 0px 20px;
 	border-radius: 6px;
-	height: 85%;
+	height: 51%;
 	margin-top: 5px;
 	transition: all 0.5s;
+	color: white;
+	text-decoration: none;
 }
+
 #log_in:hover {
 	cursor: pointer;
 	background-color: white;
@@ -195,7 +197,6 @@ form > div {
 	border: 0.5px solid grey;
 	border-radius: 6px;
 }
-
 /* Footer Style goes here */
 
 .foot {
@@ -336,33 +337,43 @@ footer h4 {
 
 /* INput part here */
 
-.part{
-    background-color: #f0f2f4;
-	/* border:1px solid rgb(0, 0, 0); */
+.part {
+	background-color: #f0f2f4;
+	border: 1px solid rgb(0, 0, 0);
 	display: grid;
-	grid-template-columns: repeat(2,1fr);
+	grid-template-columns: repeat(2, 1fr);
 }
-#part-child{
-	
-	/* border:2px solid orangered; */
-	
-	height:500px;
-	width:110%;
+.main {
+	width: 960px;
+	/* border: 1px solid greenyellow; */
+}
+.main > h2 {
+	width: 25%;
+	margin: 40px auto;
+	/* border: 1px solid green; */
+}
+#part-child {
+	border: 3px solid #a785ff;
+	width: 80%;
+	margin: auto;
+	padding: 20px;
+	border-radius: 6px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 25px;
 }
 
 .mainInput {
+	/* width: 30%; */
 	/* border: 2px solid black; */
-	height: 620px;
-	width: 60%;
-	margin-left: 100px;
-	/* margin-top: 50px; */
+	margin: 20px auto;
 	/* background-color: white; */
 	padding: 40px;
 }
 
 #data {
-	width:95%;
-	height:350px;
+	/* width:85%; */
+	/* height:350px; */
 	border: 4px solid #a785ff;
 	padding: 20px;
 	border-radius: 6px;
@@ -371,16 +382,16 @@ footer h4 {
 		rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 	margin-top: 50x;
 }
-#data>h2{
-    margin-left: 12px;
+#data > h2 {
+	margin-left: 12px;
 }
 
 form > input {
 	/* height: 30px; */
-    border: .5px solid gray;
+	border: 0.5px solid gray;
 	text-align: left;
 	padding: 10px;
-	width: 345px;
+	width: 88%;
 	border-radius: 6px;
 	margin: 0px auto 15px 15px;
 }
@@ -392,7 +403,7 @@ form > input:focus {
 #submitBtn {
 	border: none;
 	/* height: 30px;*/
-	width: 370px;
+	width: 93%;
 	border-radius: 6px;
 	margin: 0px auto 15px 15px;
 	padding: 10px;
@@ -400,50 +411,69 @@ form > input:focus {
 	color: white;
 	text-transform: uppercase;
 	font-size: 16px;
-    transition: all .5s;
+	transition: all 0.5s;
 }
-#submitBtn:hover{
-    background-color: #8230c6;
+#submitBtn:hover {
+	background-color: #8230c6;
 }
-
 
 /* ********************************** */
 
-
-
-#part-child{
-	width:90%;
-	height:auto;
- margin-left: 25px;
- margin-top: 30px;
-	/* border:1px solid rgb(226, 11, 11); */
-   padding-left: 45px;
-	display: grid;
-	grid-template-columns: repeat(5,1fr);
-	gap:25px
-  
-   
-
+#part-child > div {
+	width: 100%;
+	height: 200px;
+	/* border: 1px solid blue; */
 }
-
-#part-child>div{
-
-width: 100%;
-height:200px;
-/* border: 1px solid blue; */
-}
-#part-child>div>img{
-	width:110%;
-	height:160px;
+#part-child > div > img {
+	width: 110%;
+	height: 160px;
 	/* border: 1px solid rgb(50, 199, 20); */
-	
 }
-button{
+button {
 	background-color: red;
-	color:white;
-	border:none;
+	color: white;
+	border: none;
 	padding: 3px 20px;
 	margin-left: 5px;
 	border-radius: 0.4rem;
 	margin-bottom: 20px;
+}
+#delete {
+	border: 4px solid #a785ff;
+	padding: 20px;
+	border-radius: 6px;
+	background-color: white;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+		rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	margin-top: 50px;
+}
+
+#delete > h2 {
+	margin-left: 12px;
+}
+
+#delete input {
+	border: 0.5px solid gray;
+	text-align: left;
+	padding: 10px;
+	/* width: 88%; */
+	border-radius: 6px;
+	margin: 0px auto 15px 15px;
+	text-align: center;
+}
+#sub:hover {
+	background-color: #8230c6;
+}
+#sub {
+	border: none;
+	/* height: 30px;*/
+	width: 93%;
+	border-radius: 6px;
+	margin: 0px auto 15px 15px;
+	padding: 10px;
+	background-color: #a785ff;
+	color: white;
+	text-transform: uppercase;
+	font-size: 16px;
+	transition: all 0.5s;
 }

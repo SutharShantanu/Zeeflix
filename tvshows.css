@@ -316,8 +316,7 @@ form > div {
 	margin-top: 10px;
 	background-color: #0f0617;
 	color: white;
-	transition: all .5s;
-
+	transition: all 0.5s;
 }
 .tv_trending > div > p ~ button:hover {
 	border: 1px solid #a785ff;
@@ -335,7 +334,7 @@ form > div {
 	width: 95%;
 	margin: auto;
 	display: grid;
-	grid-template-columns: repeat(5,1fr);
+	grid-template-columns: repeat(5, 1fr);
 	gap: 10px;
 }
 .tv_trending_free > div {
@@ -365,7 +364,7 @@ form > div {
 }
 .tv_trending_free > div > img {
 	border-radius: 6px 6px 6px 6px;
-	width: 100%
+	width: 100%;
 }
 .tv_trending_free > div > p ~ button {
 	border: 1px solid #a785ff;
@@ -375,7 +374,7 @@ form > div {
 	margin-top: 10px;
 	background-color: #0f0617;
 	color: white;
-	transition: all .5s;
+	transition: all 0.5s;
 }
 .tv_trending_free > div > p ~ button:hover {
 	border: 1px solid #a785ff;
@@ -386,7 +385,6 @@ form > div {
 	color: black;
 }
 
-
 /* -----------------Genre Part Done Here----------------- */
 
 .tv_trending_genre {
@@ -394,9 +392,8 @@ form > div {
 	width: 95%;
 	margin: auto;
 	display: grid;
-	grid-template-columns: repeat(5,1fr);
+	grid-template-columns: repeat(5, 1fr);
 	gap: 10px;
-
 }
 .tv_trending_genre > div {
 	border: 3px solid black;
@@ -405,7 +402,6 @@ form > div {
 	color: white;
 	border-radius: 6px;
 	transition: all 0.5s;
-
 }
 .tv_trending_genre > div:hover {
 	transform: scale(1.1);
@@ -415,6 +411,7 @@ form > div {
 	padding: 8px;
 	background-color: white;
 	color: #0f0617;
+	cursor: pointer;
 }
 .tv_trending_genre > div > h4 {
 	margin-bottom: 0px;

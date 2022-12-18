@@ -36,7 +36,7 @@ let data = fetch("https://63987501fe03352a94d1a25b.mockapi.io/home1")
     .then((res) => res.json())
     .then((data) => {
         // console.log(data)
-        bag=data;
+        bag = data;
         displayData(bag);
     });
 
@@ -48,16 +48,16 @@ function displayData (data) {
     data.forEach((ele) => {
         let div = document.createElement("div");
         let img = document.createElement("img");
-        img.src = ele.image;
+        img.src = ele.imgurl;
 
         let title = document.createElement("h3");
-        title.innerText = ele.tilte;
+        title.innerText = ele.title;
 
         let runtime = document.createElement("p");
-        runtime.innerText = "Length : " + ele.runtime + "min";
+        runtime.innerText = "Length : 1hr " + ele.runtime + "min";
 
         let rating = document.createElement("p");
-        rating.innerText = "Rating : " + ele.rating + "⭐";
+        rating.innerText = "Rating : " + ele.rating + "⭐ / 100 ⭐";
 
         let watch = document.createElement("button");
         watch.innerText = "Watch";
@@ -76,7 +76,9 @@ let searchInput = document.getElementById("nav_search");
 let search = document.getElementById("search_div");
 
 search.addEventListener("click", () => {
-    window.location.href ="search.html";
+    // window.location.href = "search.html";
+    searchedData(searchInput);
+
 })
 
 async function searchedData (searchInput) {
@@ -87,12 +89,10 @@ async function searchedData (searchInput) {
     let renderedData = await data.json();
     console.log(renderedData)
     sessionStorage.setItem("searchedData", JSON.stringify(renderedData));
-    window.location.href = "search.html";
+        window.location.href = "search.html";
+
 }
 
-// ----------------------------------------------------------------
-
-// let searchedInput = document.getElementById("searchInput");
 
 // let serachBtn = document.querySelector("#searchBar form");
 // serachBtn.addEventListener("submit", (event) => {
@@ -112,19 +112,4 @@ async function searchedData (searchInput) {
 //     sessionStorage.setItem("searchedData", JSON.stringify(renderedData));
 //     window.location.href = "searchedProduct.html";
 // }
-
-
-
-
-// function search () {
-//     window.location.href="search.html";
-//     let p = document.querySelector("input").value;
-//     console.log(p);
-//     let newData = bag.filter(function (ele) {
-//         return ele.tilte.toLowerCase().includes(p.toLocaleLowerCase());
-//     });
-//     console.log(newData);
-//     displayData(newData)
-// };
-
 
