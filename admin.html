@@ -9,17 +9,17 @@
             content="width=device-width, initial-scale=1.0">
         <link rel="icon"
             type="image/x-icon"
-            href="/Image/Logo_White_Round.ico">
+            href="/Image/Nav_img/Logo_White_Round.ico">
         <title>Admin | ZEEflix - Watch TV Shows, 100+ Originals, Movies, News &amp; Live TV Online</title>
         <link rel="stylesheet"
-            href="/admin.css">
+            href="Style/admin.css">
 
     </head>
 
     <body>
         <header>
             <nav>
-                <img src="/Image/Logo_White_Round.png"
+                <img src="/Image/Nav_img/Logo_White_Round.png"
                     alt="Logo_Croped">
                 <div class="nav_main">
                     <div id="nav_link">
@@ -43,12 +43,12 @@
                             <h1>Welcome Admin :)</h1>
                             <a href="login.html"
                                 id="log_in">login</a>
-                            <div id="buy_plan"> <img src="/Image/setting.png"
+                            <div id="buy_plan"> <img src="/Image/Nav_img/setting.png"
                                     alt="crown">
                                 <p>Admin</p>
                             </div>
                             <img id="ham"
-                                src="/Image/hamburger.png"
+                                src="/Image/Nav_img/hamburger.png"
                                 alt="">
                         </div>
                     </div>
@@ -132,16 +132,16 @@
                         <div class="connect">
                             <h4>Connect with us</h4>
                             <a href="https://www.facebook.com/ZEE5/"
-                                target="_blank"><img src="/Image/facebook.png"
+                                target="_blank"><img src="/Image/Nav_img/facebook.png"
                                     alt=""></a>
                             <a href="https://www.instagram.com/zee5/"
-                                target="_blank"><img src="/Image/instagram.png"
+                                target="_blank"><img src="/Image/Nav_img/instagram.png"
                                     alt=""></a>
                             <a href="https://twitter.com/zee5india"
-                                target="_blank"><img src="/Image/twitter.png"
+                                target="_blank"><img src="/Image/Nav_img/twitter.png"
                                     alt=""></a>
                             <a href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ"
-                                target="_blank"><img src="/Image/youtube.png"
+                                target="_blank"><img src="/Image/Nav_img/youtube.png"
                                     alt=""></a>
                         </div>
                     </div>
@@ -300,9 +300,11 @@
     function display (data) {
         document.querySelector("#part-child").innerHTML = "";
         data.forEach(function (el) {
-            let div = document.createElement("div")
-            let img = document.createElement("img")
-            img.setAttribute("src", el.imgurl)
+            let div = document.createElement("div");
+            let img = document.createElement("img");
+            img.setAttribute("src", el.imgurl);
+            let id = document.createElement("p");
+            id.innerText="ID :- "+el.id;
             let btn = document.createElement("button")
             btn.innerText = "Delete"
             btn.setAttribute.data_id = el.id
@@ -312,7 +314,7 @@
                 // DeleteBtn(data_id);
             })
 
-            div.append(img, btn)
+            div.append(img,id, btn)
             document.querySelector("#part-child").append(div)
 
         })
